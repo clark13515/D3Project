@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//src/app/task_sdcard.c=UTF-8
+encoding//src/app/task_test.c=UTF-8
+encoding//src/driver/gpiopl_intr.c=UTF-8
+encoding//src/driver/gpiopl_intr.h=UTF-8
+encoding//src/driver/sdcard.c=UTF-8
+encoding//src/protocol/protocol_adcompass.h=UTF-8

@@ -1,0 +1,209 @@
+/*
+ * @Copyright: Copyright (C) by xxx Ltd
+ * @file: 
+ * @Brief: 
+ * @FilePath: \D3project\D3_zu\src\service\ethernet\service_ethernet.c
+ * @PROJECT: D3
+ * @COMPILER: GCC
+ * @HW PLATFORM: ARM
+ * @Author: Wang ShiLong
+ * @LastEditors: Wang ShiLong
+ * @Date: 2023-01-26 19:17:21
+ * @LastEditTime: 2023-02-17 17:09:15
+ */
+
+#include "service_ethernet.h"
+#include "utilities.h"
+#include "protocol_adcompass.h"
+#include "protocol_plcp.h"
+#include "task_init.h"
+
+#define IF_PROTOCOL_DEFAULT_PORT_LOGGER          (1)
+#define IF_PROTOCOL_DEFAULT_PORT_NTP             (123)
+#define IF_PROTOCOL_DEFAULT_PORT_ADCPS           (2468)
+#define IF_PROTOCOL_DEFAULT_PORT_PLCP            (2469)
+
+static if_protocol_t     *g_protocol_plcp_eth_if_protocol ;
+
+static int protocol_plcp_eth_send(uint8_t *data, uint16_t length)
+{
+    int ret;
+    ret = if_protocol_send(g_protocol_plcp_eth_if_protocol, data, length);
+    return ret;
+}
+
+__attribute__((weak)) int protocol_plcp_eth_handle(void *param)
+{
+    /**
+     * Note: should handle, if socket created.
+     */
+    uint8_t recv_buf[10];
+    int n;
+    if_protocol_t *protocol = (if_protocol_t *)param;
+    protocol_plcp_process_msg_info_t  g_protocol_plcp_eth_msg_buffer_info;
+    protocol_plcp_process_msg_t  msg;
+
+    g_protocol_plcp_eth_if_protocol = (if_protocol_t*)param;
+
+    msg.info = &g_protocol_plcp_eth_msg_buffer_info;
+
+    g_protocol_plcp_eth_msg_buffer_info.send = protocol_plcp_eth_send;
+
+    if(NULL == protocol)
+    {
+        return -1;
+    }
+    n = if_protocol_recv(protocol, recv_buf, 10);
+
+    if(n <= 0)
+    {
+        return -1;
+    }
+    else
+    {
+        msg.info->length = n;
+        memcpy(msg.info->data, recv_buf, msg.info->length);
+        msg_info->status =2;
+        
+        protocol_plcp_msg_process(&msg)
+    }
+
+    return 0;
+}
+
+
+static if_protocol_t g_service_ethernet_if_protocol[SERVICE_ETHERNET_NUMBER_OF_INTS] =
+{
+    // ADCPS
+    {
+        .tag  = IF_PROTOCOL_TAG_ADCPS,
+        .type = IF_PROTOCOL_TYPE_UDP_SERVER,
+        .name = "ADCPS",
+        .port = IF_PROTOCOL_DEFAULT_PORT_ADCPS,
+        .handle = protocol_adcps_handle,
+
+        .init_flag = 0,
+    },
+    // PLCP
+    {
+        .tag  = IF_PROTOCOL_TAG_PLCP,
+        .type = IF_PROTOCOL_TYPE_UDP_SERVER,
+        .name = "PLCP",
+        .port = IF_PROTOCOL_DEFAULT_PORT_PLCP,
+        .handle = protocol_plcp_eth_handle,
+        .init_flag = 0,
+    },
+#if 0
+    {
+        .tag  = IF_PROTOCOL_TAG_PLCP,
+        .type = IF_PROTOCOL_TYPE_UDP_SERVER,
+        .name = "PLCP",
+        .port = IF_PROTOCOL_DEFAULT_PORT_PLCP,
+#if (PLATFORM_CONFIG_CPU_ID == PLATFORM_CONFIG_CPU_ID_A53_0)
+        .handle = protocol_plcp_eth_handle,
+#elif (PLATFORM_CONFIG_CPU_ID == PLATFORM_CONFIG_CPU_ID_A53_1)
+        .handle = protocol_plcp_eth_route_handle,
+#else
+        #error "Unknown CPU ID!"
+#endif
+        .init_flag = 0,
+    },
+    // LOGGER
+    {
+        .tag  = IF_PROTOCOL_TAG_LOGGER,
+        .type = IF_PROTOCOL_TYPE_UDP_SERVER,
+        .name = "LOGGER",
+        .port = IF_PROTOCOL_DEFAULT_PORT_LOGGER,
+        .handle = protocol_logger_handle,
+        .init_flag = 0,
+    },
+#endif
+ 
+};
+
+
+
+bool service_ethernet_is_port_reserved(uint32_t port)
+{
+    if((IF_PROTOCOL_DEFAULT_PORT_LOGGER == port)   \
+      || (IF_PROTOCOL_DEFAULT_PORT_NTP == port) )
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+
+static void service_ethernet_handle(void* arg)
+{
+    if_protocol_t *protocol = (if_protocol_t *)arg;
+    eth_netif_info_t *p_netif_info;
+    p_netif_info = task_init_eth_get_netif_info();
+    for(;;)
+    {
+        if(0 == p_netif_info->netif_init_flag)
+        {
+            OSIF_TimeDelay(1000);
+        }
+        else
+        {
+            break;
+        }
+    }
+    /* stroe netif handle */
+    protocol->netif_handle = p_netif_info->netif_handle;
+
+    if_protocol_init(protocol);
+    for(;;)
+    {
+        if((1 == protocol->init_flag) && (NULL != protocol->handle))
+        {
+            /* check if phy linkup */
+            if(((protocol->netif_handle->flags) & NETIF_FLAG_LINK_UP))
+            {
+                protocol->handle((void *)protocol);
+            }
+            else
+            {
+                OSIF_TimeDelay(1000);
+            }
+        }
+        else
+        {
+            if((1 != protocol->init_flag))
+            {
+                if_protocol_init(protocol);
+            }
+            OSIF_TimeDelay(1000);
+        }
+    }
+}
+
+
+
+#define SERVICE_ETHERNET_STACK_SIZE          (4096)
+static FORCE_ALIGNED_INBYTE(4) uint8_t service_ethernet_stack0[SERVICE_ETHERNET_STACK_SIZE];
+static FORCE_ALIGNED_INBYTE(4) uint8_t service_ethernet_stack1[SERVICE_ETHERNET_STACK_SIZE];
+
+
+OSIF_Task_t g_service_ethernet[SERVICE_ETHERNET_NUMBER_OF_INTS] =
+{
+    {
+        .name = g_service_ethernet_if_protocol[0].name,
+        .handler = service_ethernet_handle,
+        .arg = &g_service_ethernet_if_protocol[0],
+        .stack = (void*)service_ethernet_stack0,
+        .StackSize_byte = SERVICE_ETHERNET_STACK_SIZE,
+    },
+    {
+        .name = g_service_ethernet_if_protocol[1].name,
+        .handler = service_ethernet_handle,
+        .arg = &g_service_ethernet_if_protocol[1],
+        .stack = (void*)service_ethernet_stack1,
+        .StackSize_byte = SERVICE_ETHERNET_STACK_SIZE,
+    },
+
+};

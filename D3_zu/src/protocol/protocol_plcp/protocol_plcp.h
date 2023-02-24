@@ -1,0 +1,83 @@
+/*** 
+ * @Copyright: Copyright (C) by xxx Ltd
+ * @file: 
+ * @Brief: 
+ * @FilePath: \D3project\D3_zu\src\protocol\protocol_plcp\protocol_plcp.h
+ * @PROJECT: D3
+ * @COMPILER: GCC
+ * @HW PLATFORM: ARM
+ * @Author: Wang ShiLong
+ * @LastEditors: Wang ShiLong
+ * @Date: 2023-02-17 14:26:01
+ * @LastEditTime: 2023-02-17 15:49:54
+ */
+
+#ifndef __PROTOCOL_PROTOCOL_PLCP_HANDLE_H_
+#define __PROTOCOL_PROTOCOL_PLCP_HANDLE_H_
+
+#include "protocol_plcp_common.h"
+#include "protocol_plcp_cmd_map.h"
+#include "stdint.h"
+#include "utilities_data_coversion.h"
+
+
+#pragma pack(push)
+#pragma pack(1)
+
+
+
+
+
+typedef struct
+{
+    uint8_t     start_flag[2];           //'C''P'
+    uint8_t     product_id;              //0x01: P4
+    uint8_t     protocol_id;             //0x02:  PLCP REQUEST
+    uint16_t    protocol_version;        //
+    uint32_t    counter;
+} protocol_plcp_header_t;
+
+typedef struct
+{
+    uint32_t sum_check;
+    uint16_t end_flag;
+} protocol_plcp_tail_t;
+#pragma pack(pop)
+
+typedef struct
+{
+    uint8_t   cmd_id;
+    uint16_t  data_length;
+    uint8_t  *data;
+} protocol_plcp_payload_t;
+
+typedef struct 
+{
+    protocol_plcp_header_t  header;
+    protocol_plcp_payload_t payload;
+    protocol_plcp_tail_t    tail;
+    
+    uint16_t  raw_data_length;
+    uint8_t  *raw_data;
+} protocol_plcp_t;
+
+
+
+
+
+typedef void (*protocol_plcp_handle_cb_t) (void);
+
+
+typedef struct protocol_plcp_handle_info {
+    protocol_plcp_t           *request;
+    protocol_plcp_t           *response;
+    protocol_plcp_cmd_info_t  *cmd_info;
+} protocol_plcp_handle_info_t;
+
+
+extern void protocol_plcp_handle_cb_register(protocol_plcp_handle_cb_t handle_cb);
+extern int  protocol_plcp_msg_process(protocol_plcp_process_msg_t *msg);
+
+
+
+#endif /*__PROTOCOL_PROTOCOL_PLCP_HANDLE_H_*/

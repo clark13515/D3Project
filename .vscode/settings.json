@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "task_test.h": "c",
+        "protocol_adcompass.h": "c",
+        "xadapter.h": "c",
+        "utilities_data_coversion.h": "c",
+        "dma_intr.h": "c",
+        "gpiopl_intr.h": "c",
+        "drivers_common.h": "c",
+        "task_adcps_send.h": "c",
+        "init.h": "c",
+        "cstdint": "c",
+        "protocol_plcp_cmd_handle.h": "c",
+        "protocol_plcp.h": "c"
+    }
+}

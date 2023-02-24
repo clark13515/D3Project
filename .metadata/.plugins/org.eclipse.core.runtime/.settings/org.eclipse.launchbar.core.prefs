@@ -1,0 +1,15 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_D3_udp_proj_system,org.eclipse.launchbar.core.descriptorType.default\:Debugger_D3_udp_proj-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_xsdps_raw_example_1-Default,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_D3_zu_system,org.eclipse.launchbar.core.descriptorType.default\:Debugger_D3_zu-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_NetTest-Default
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_D3_udp_proj-Default/activeLaunchMode=embdebug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_D3_udp_proj-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_D3_zu-Default/activeLaunchMode=embdebug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_D3_zu-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_xaxidma_example_simple_intr_1-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_xsdps_raw_example_1-Default/activeLaunchMode=embdebug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_xsdps_raw_example_2-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_D3_udp_proj_system/activeLaunchMode=systemdebug
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_D3_zu_system/activeLaunchMode=systemdebug
+org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_xsdps_raw_example_1_system/activeLaunchMode=systemdebug

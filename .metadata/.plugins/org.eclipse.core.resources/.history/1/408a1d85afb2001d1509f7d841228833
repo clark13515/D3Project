@@ -1,0 +1,231 @@
+/*
+ * task_init.c
+ *
+ *  Created on: 2022/01/21
+ *      Author: jeremy.xiang
+ */
+
+#include "task_init.h"
+#include "osif.h"
+
+
+#include "netif/xadapter.h"
+#include "lwip/init.h"
+#include "lwip/inet.h"
+#include "lwip/dhcp.h"
+
+#define PLATFORM_EMAC_BASEADDR (0xFF0E0000)
+
+static struct netif       g_task_init_eth_netif0;
+static eth_netif_info_t   g_task_init_eth_netif_info;
+/**
+ * MAC rule(BIT40 should be zero)
+ * Organizationally Unique Identifier: [0] [1] [2]: 0x58:0x32:0x00
+ *
+ */
+static uint8_t            g_task_init_eth_mac_address[6]   = { 0x00, 0x0a, 0x35, 0x00, 0x01, 0x02 };
+static uint8_t            g_task_init_eth_ip[4]            = {192,168,0,10};
+static uint8_t            g_task_init_eth_netmask[4]       = {255,255,255,0};
+static uint8_t            g_task_init_eth_gateway[4]       = {192,168,0,1};
+static volatile uint32_t  g_task_init_eth_dhcp_enable_flag = 0;
+
+
+static uint32_t           g_task_init_eth_mscnt            = 0;
+static uint32_t           g_task_init_eth_mscnt_timeout    = 0;
+
+static void task_init_eth_network_param_init(void)
+{
+    /* mac */
+    g_task_init_eth_mac_address[0] = 0x00;
+    g_task_init_eth_mac_address[1] = 0x0a;
+    g_task_init_eth_mac_address[2] = 0x35;
+    g_task_init_eth_mac_address[3] = 0x00;
+    g_task_init_eth_mac_address[4] = 0x01;
+    g_task_init_eth_mac_address[5] = 0x02;
+
+    g_task_init_eth_dhcp_enable_flag = 0;
+
+    g_task_init_eth_netif_info.netif_handle = NULL;
+    g_task_init_eth_netif_info.netif_init_flag = 0;
+}
+
+static void task_init_eth_assign_static_ip(struct netif *netif, uint8_t *ip, uint8_t *mask, uint8_t *gw)
+{
+    if((NULL != netif) && (NULL != ip) && (NULL != mask) && (NULL != gw))
+    {
+        IP4_ADDR(&(netif->ip_addr),
+                ip[0], ip[1], ip[2], ip[3]);
+        IP4_ADDR(&(netif->netmask),
+                mask[0], mask[1], mask[2], mask[3]);
+        IP4_ADDR(&(netif->gw),
+                gw[0], gw[1], gw[2], gw[3]);
+    }
+
+}
+
+static void task_init_eth_get_ip_from_config_ini(uint8_t *ip, uint8_t *mask, uint8_t *gw)
+{
+    // config_ini_if_eth_ip_get(&ip[0], &ip[1], &ip[2], &ip[3]);
+    // config_ini_if_eth_mask_get(&mask[0], &mask[1], &mask[2], &mask[3]);
+    // config_ini_if_eth_gateway_get(&gw[0], &gw[1], &gw[2], &gw[3]);
+
+    for(int i =0 ;i <4 ;i++)
+    {
+        ip[i]   = g_task_init_eth_ip[i];
+        mask[i] = g_task_init_eth_netmask[i];
+        gw[i]   =  g_task_init_eth_gateway[i];
+    }
+}
+
+// static void task_init_eth_get_mac_addr_from_config_ini(uint8_t *mac)
+// {
+//     uint8_t sn[CONFIG_SN_LENGTH] = {0};
+//     char mac_str[8];
+//     mac_str[7] = '\0';
+//     config_ini_sncode_get(sn);
+//     memcpy((void *)mac_str, (void *)(sn + CONFIG_SN_MAC_OFFSET), COFNIG_SN_MAC_LENGTH);
+//     uint32_t mac_value = atoi(mac_str);
+//     mac[0] = (uint8_t)(CONFIG_MAC_BYTE0);
+//     mac[1] = (uint8_t)(CONFIG_MAC_BYTE1);
+//     mac[2] = (uint8_t)(mac_value >> 24);
+//     mac[3] = (uint8_t)(mac_value >> 16);
+//     mac[4] = (uint8_t)(mac_value >> 8);
+//     mac[5] = (uint8_t)(mac_value >> 0);
+// }
+
+static void task_init_eth_get_dhcp_flag_from_config_ini(uint32_t *dhcp_flag)
+{
+    // config_ini_if_eth_dhcp_status_get(dhcp_flag);
+    *dhcp_flag =g_task_init_eth_dhcp_enable_flag;
+}
+
+static void task_init_eth_network_info_printf(struct netif  *netif_ptr)
+{
+  
+    if(netif_ptr != NULL)
+    {
+        xil_printf("\r\n************************************************\r\n");
+        xil_printf(" IPv4 info\r\n");
+        xil_printf("************************************************\r\n");
+        xil_printf(" IPv4 Address     : %u.%u.%u.%u\r\n",\
+                                ip4_addr1(&(netif_ptr->ip_addr)), ip4_addr2(&(netif_ptr->ip_addr)),\
+                                ip4_addr3(&(netif_ptr->ip_addr)), ip4_addr4(&(netif_ptr->ip_addr)));
+        xil_printf(" IPv4 Subnet mask : %u.%u.%u.%u\r\n",\
+                                ip4_addr1(&(netif_ptr->netmask)), ip4_addr2(&(netif_ptr->netmask)),\
+                                ip4_addr3(&(netif_ptr->netmask)), ip4_addr4(&(netif_ptr->netmask)));
+        xil_printf(" IPv4 Gateway     : %u.%u.%u.%u\r\n",\
+                                ip4_addr1(&(netif_ptr->gw)), ip4_addr2(&(netif_ptr->gw)),\
+                                ip4_addr3(&(netif_ptr->gw)), ip4_addr4(&(netif_ptr->gw)));
+        xil_printf(" IPv4 MAC         : 0x%02x.0x%02x.0x%02u.0x%02x.0x%02x.0x%02x\r\n",\
+                                g_task_init_eth_mac_address[0], g_task_init_eth_mac_address[1],\
+                                g_task_init_eth_mac_address[2], g_task_init_eth_mac_address[3],\
+                                g_task_init_eth_mac_address[4], g_task_init_eth_mac_address[5]);
+        xil_printf("************************************************\r\n");
+    }
+
+
+}
+
+static int task_init_eth_lwip_stack_init(void)
+{
+    g_task_init_eth_netif_info.netif_handle = NULL;
+    g_task_init_eth_netif_info.netif_init_flag = 0;
+    lwip_init();
+    // task_init_eth_get_mac_addr_from_config_ini(g_task_init_eth_mac_address);
+    if(!xemac_add(&g_task_init_eth_netif0, NULL, NULL, NULL, g_task_init_eth_mac_address, PLATFORM_EMAC_BASEADDR))
+    {
+        return -1;
+    }
+    g_task_init_eth_netif_info.netif_handle = &g_task_init_eth_netif0;
+    netif_set_default(&g_task_init_eth_netif0);
+    netif_set_up(&g_task_init_eth_netif0);
+
+    task_init_eth_get_dhcp_flag_from_config_ini(&g_task_init_eth_dhcp_enable_flag);
+    if(1 == g_task_init_eth_dhcp_enable_flag)
+    {
+        dhcp_start(&g_task_init_eth_netif0);
+        g_task_init_eth_mscnt = 0;
+        g_task_init_eth_mscnt_timeout = 0;
+        while (1) {
+            vTaskDelay(DHCP_FINE_TIMER_MSECS / portTICK_RATE_MS);
+            dhcp_fine_tmr();
+            g_task_init_eth_mscnt += DHCP_FINE_TIMER_MSECS;
+            if (g_task_init_eth_mscnt >= DHCP_COARSE_TIMER_SECS*1000) {
+                dhcp_coarse_tmr();
+                g_task_init_eth_mscnt = 0;
+            }
+
+            //check if dhcp success
+            if (g_task_init_eth_netif0.ip_addr.addr) {
+                xil_printf("DHCP request success\r\n");
+                break;
+            }
+            g_task_init_eth_mscnt_timeout += DHCP_FINE_TIMER_MSECS;
+            if (g_task_init_eth_mscnt_timeout >= 10000) {
+                dhcp_stop(&g_task_init_eth_netif0);
+                xil_printf("ERROR: DHCP request timed out\r\n");
+                task_init_eth_get_ip_from_config_ini(g_task_init_eth_ip, g_task_init_eth_netmask, g_task_init_eth_gateway);
+                task_init_eth_assign_static_ip(&g_task_init_eth_netif0, g_task_init_eth_ip, g_task_init_eth_netmask, g_task_init_eth_gateway);
+                break;
+            }
+        }
+    }
+    else
+    {
+        task_init_eth_get_ip_from_config_ini(g_task_init_eth_ip, g_task_init_eth_netmask, g_task_init_eth_gateway);
+        task_init_eth_assign_static_ip(&g_task_init_eth_netif0, g_task_init_eth_ip, g_task_init_eth_netmask, g_task_init_eth_gateway);
+    }
+    task_init_eth_network_info_printf(&g_task_init_eth_netif0);
+
+    g_task_init_eth_netif_info.netif_init_flag = 1;
+    return 0;
+}
+
+
+static void task_init_eth_init(void)
+{
+    task_init_eth_network_param_init();
+    task_init_eth_lwip_stack_init();
+}
+
+eth_netif_info_t* task_init_eth_get_netif_info(void)
+{
+    return &g_task_init_eth_netif_info;
+}
+
+
+
+static void task_init_handler(void* arg)
+{
+    (void)arg;
+    int ret = 0;
+
+    task_init_eth_init();
+    for (;;)
+    {
+        if((NULL != g_task_init_eth_netif_info.netif_handle) && (1 == g_task_init_eth_netif_info.netif_init_flag))
+        {
+
+            OSIF_TimeDelay(1000);
+
+        }
+        else
+        {
+            task_init_eth_init();
+            OSIF_TimeDelay(1000);
+        }
+    }
+}
+
+
+
+#define TASK_INIT_STACK_SIZE  4096
+static FORCE_ALIGNED_INBYTE(4) uint8_t task_init_stack[TASK_INIT_STACK_SIZE];
+OSIF_Task_t g_task_init = {
+        .name = "task_init",
+        .handler = task_init_handler,
+        .arg = NULL,
+        .stack = (void*)task_init_stack,
+        .StackSize_byte = TASK_INIT_STACK_SIZE,
+};
+

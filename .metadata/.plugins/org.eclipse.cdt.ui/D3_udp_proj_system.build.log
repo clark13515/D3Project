@@ -1,0 +1,10 @@
+16:55:37 **** Incremental Build of configuration Debug for project D3_udp_proj_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 64189 D:/code/2Wproject/D3project/top_1/export/top_1/top_1.xpfm freertos10_xilinx_psu_cortexa53_0 D:/code/2Wproject/D3project/D3_udp_proj_system/Debug/system.bif
+sdcard_gen --xpfm D:/code/2Wproject/D3project/top_1/export/top_1/top_1.xpfm --sys_config top_1 --bif D:/code/2Wproject/D3project/D3_udp_proj_system/Debug/system.bif --bitstream D:/code/2Wproject/D3project/D3_udp_proj/_ide/bitstream/top.bit --elf D:/code/2Wproject/D3project/D3_udp_proj/Debug/D3_udp_proj.elf,psu_cortexa53_0
+creating BOOT.BIN using D:/code/2Wproject/D3project/D3_udp_proj/_ide/bitstream/top.bit
+Running D:/Xilinx/Vitis/2021.2/bin/bootgen -arch zynqmp -image D:/code/2Wproject/D3project/D3_udp_proj_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+16:55:42 Build Finished (took 4s.719ms)
+

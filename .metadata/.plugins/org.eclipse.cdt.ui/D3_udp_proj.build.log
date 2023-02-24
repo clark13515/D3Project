@@ -1,0 +1,26 @@
+15:05:13 **** Build of configuration Debug for project D3_udp_proj ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/code/2Wproject/D3project/top_1/export/top_1/sw/top_1/freertos10_xilinx_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/udp_perf_server.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_server.o" -ID:/code/2Wproject/D3project/top_1/export/top_1/sw/top_1/freertos10_xilinx_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/udp_perf_server.d" -MT"src/udp_perf_server.o" -o "src/udp_perf_server.o" "../src/udp_perf_server.c"
+'Finished building: ../src/udp_perf_server.c'
+' '
+'Building target: D3_udp_proj.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/code/2Wproject/D3project/top_1/export/top_1/sw/top_1/freertos10_xilinx_psu_cortexa53_0/bsplib/lib -o "D3_udp_proj.elf"  ./src/gpiopl_intr.o ./src/iic_phyreset.o ./src/main.o ./src/udp_perf_server.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: D3_udp_proj.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size D3_udp_proj.elf  |tee "D3_udp_proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 244239	   8064	44208373	44460676	2a66a84	D3_udp_proj.elf
+'Finished building: D3_udp_proj.elf.size'
+' '
+
+15:05:14 Build Finished (took 909ms)
+

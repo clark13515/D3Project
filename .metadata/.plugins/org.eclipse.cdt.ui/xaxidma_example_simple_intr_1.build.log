@@ -1,0 +1,26 @@
+14:43:39 **** Build of configuration Debug for project xaxidma_example_simple_intr_1 ****
+make all 
+'Building file: ../src/port_freertos_hook.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/port_freertos_hook.o" -ID:/code/2Wproject/D3project/top/export/top/sw/top/freertos10_xilinx_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/port_freertos_hook.d" -MT"src/port_freertos_hook.o" -o "src/port_freertos_hook.o" "../src/port_freertos_hook.c"
+'Finished building: ../src/port_freertos_hook.c'
+' '
+'Building file: ../src/xaxidma_example_simple_intr.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxidma_example_simple_intr.o" -ID:/code/2Wproject/D3project/top/export/top/sw/top/freertos10_xilinx_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/xaxidma_example_simple_intr.d" -MT"src/xaxidma_example_simple_intr.o" -o "src/xaxidma_example_simple_intr.o" "../src/xaxidma_example_simple_intr.c"
+'Finished building: ../src/xaxidma_example_simple_intr.c'
+' '
+'Building target: xaxidma_example_simple_intr_1.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/code/2Wproject/D3project/top/export/top/sw/top/freertos10_xilinx_psu_cortexa53_0/bsplib/lib -o "xaxidma_example_simple_intr_1.elf"  ./src/port_freertos_hook.o ./src/xaxidma_example_simple_intr.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: xaxidma_example_simple_intr_1.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size xaxidma_example_simple_intr_1.elf  |tee "xaxidma_example_simple_intr_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145977	   7936	 292547	 446460	  6cffc	xaxidma_example_simple_intr_1.elf
+'Finished building: xaxidma_example_simple_intr_1.elf.size'
+' '
+
+14:43:40 Build Finished (took 1s.206ms)
+

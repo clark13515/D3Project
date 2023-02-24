@@ -1,0 +1,514 @@
+timestamp=[2023-01-25 10:37:40], mode=WORKBENCH_START, duration=0:00:04.101, duration_ms=4101, data={}
+timestamp=[2023-01-25 10:37:41], mode=WORKBENCH_UI_INIT, duration=0:00:00.458, duration_ms=458, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-01-25 10:37:41], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.048, duration_ms=48, data={}
+timestamp=[2023-01-25 10:43:06], mode=APP_CREATION, duration=0:00:36.379, duration_ms=36379, data={name=D3_zu, project_type=sdk, os=freertos10_xilinx, processor=psu_cortexa53, runtime=cpp, platform=top, application_type=application}
+timestamp=[2023-01-25 10:58:31], mode=PLATFORM_GENERATION, duration=0:00:38.055, duration_ms=38055, data={name=top}
+timestamp=[2023-01-25 10:58:34], mode=BUILD, duration=0:00:02.659, duration_ms=2659, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 11:04:22], mode=BUILD, duration=0:00:00.632, duration_ms=632, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 11:40:58], mode=BUILD, duration=0:00:00.454, duration_ms=454, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-25 11:40:58], mode=BUILD, duration=0:00:00.485, duration_ms=485, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 11:42:37], mode=BUILD, duration=0:00:00.126, duration_ms=126, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-25 11:42:38], mode=BUILD, duration=0:00:01.057, duration_ms=1057, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 11:43:40], mode=BUILD, duration=0:00:00.179, duration_ms=179, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 11:44:52], mode=BUILD, duration=0:00:00.114, duration_ms=114, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-25 11:44:53], mode=BUILD, duration=0:00:01.627, duration_ms=1627, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 11:47:08], mode=BUILD, duration=0:00:00.225, duration_ms=225, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 11:47:40], mode=BUILD, duration=0:00:00.114, duration_ms=114, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-25 11:47:41], mode=BUILD, duration=0:00:01.533, duration_ms=1533, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 11:54:20], mode=BUILD, duration=0:00:00.250, duration_ms=250, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 11:54:38], mode=BUILD, duration=0:00:00.606, duration_ms=606, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 11:55:14], mode=BUILD, duration=0:00:00.121, duration_ms=121, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-25 11:55:16], mode=BUILD, duration=0:00:01.619, duration_ms=1619, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 11:55:43], mode=BUILD, duration=0:00:00.563, duration_ms=563, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 12:01:42], mode=BUILD, duration=0:00:00.242, duration_ms=242, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 12:02:59], mode=BUILD, duration=0:00:00.189, duration_ms=189, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 12:03:15], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 12:05:14], mode=BUILD, duration=0:00:00.441, duration_ms=441, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 12:06:48], mode=BUILD, duration=0:00:00.224, duration_ms=224, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 12:07:20], mode=PLATFORM_GENERATION, duration=0:00:05.827, duration_ms=5827, data={name=top}
+timestamp=[2023-01-25 12:07:20], mode=BUILD, duration=0:00:00.111, duration_ms=111, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-25 12:08:02], mode=PLATFORM_GENERATION, duration=0:00:32.174, duration_ms=32174, data={name=top}
+timestamp=[2023-01-25 12:08:04], mode=BUILD, duration=0:00:02.084, duration_ms=2084, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-25 12:14:55], mode=APP_CREATION, duration=0:00:01.116, duration_ms=1116, data={name=xsdps_raw_example_1, project_type=sdk, os=freertos10_xilinx, processor=cortex-a53, runtime=C/C++, platform=top, application_type=application}
+timestamp=[2023-01-26 14:12:21], mode=WORKBENCH_START, duration=0:00:07.230, duration_ms=7230, data={}
+timestamp=[2023-01-26 14:12:22], mode=WORKBENCH_UI_INIT, duration=0:00:00.817, duration_ms=817, data={editors_count=27, platform_editors_count=2, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-01-26 14:12:22], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.089, duration_ms=89, data={}
+timestamp=[2023-01-26 14:14:00], mode=PLATFORM_GENERATION, duration=0:00:35.573, duration_ms=35573, data={name=top}
+timestamp=[2023-01-26 14:14:34], mode=BUILD, duration=0:00:01.048, duration_ms=1048, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 14:18:37], mode=BUILD, duration=0:00:00.249, duration_ms=249, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 14:31:22], mode=BUILD, duration=0:00:00.347, duration_ms=347, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 14:32:09], mode=BUILD, duration=0:00:00.248, duration_ms=248, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 14:35:18], mode=BUILD, duration=0:00:00.252, duration_ms=252, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 15:02:56], mode=BUILD, duration=0:00:00.216, duration_ms=216, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 15:02:58], mode=BUILD, duration=0:00:01.288, duration_ms=1288, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 15:03:12], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 15:03:22], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 15:03:29], mode=BUILD, duration=0:00:00.313, duration_ms=313, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 15:04:48], mode=BUILD, duration=0:00:00.241, duration_ms=241, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 15:09:15], mode=PLATFORM_GENERATION, duration=0:00:16.428, duration_ms=16428, data={name=top}
+timestamp=[2023-01-26 15:15:28], mode=PLATFORM_GENERATION, duration=0:00:15.948, duration_ms=15948, data={name=top}
+timestamp=[2023-01-26 15:15:33], mode=BUILD, duration=0:00:01.034, duration_ms=1034, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 15:16:51], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 15:18:22], mode=BUILD, duration=0:00:00.358, duration_ms=358, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 15:18:34], mode=BUILD, duration=0:00:00.248, duration_ms=248, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 15:19:09], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 15:22:42], mode=BUILD, duration=0:00:00.247, duration_ms=247, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:09:35], mode=BUILD, duration=0:00:00.301, duration_ms=301, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:11:08], mode=PLATFORM_GENERATION, duration=0:00:07.435, duration_ms=7435, data={name=top}
+timestamp=[2023-01-26 17:11:08], mode=BUILD, duration=0:00:00.127, duration_ms=127, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 17:11:46], mode=PLATFORM_GENERATION, duration=0:00:34.125, duration_ms=34125, data={name=top}
+timestamp=[2023-01-26 17:11:47], mode=BUILD, duration=0:00:01.505, duration_ms=1505, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:14:48], mode=BUILD, duration=0:00:00.162, duration_ms=162, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 17:14:50], mode=BUILD, duration=0:00:01.615, duration_ms=1615, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:15:52], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:16:20], mode=BUILD, duration=0:00:01.280, duration_ms=1280, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:43:11], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:43:43], mode=BUILD, duration=0:00:00.251, duration_ms=251, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:43:59], mode=BUILD, duration=0:00:00.244, duration_ms=244, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:44:22], mode=BUILD, duration=0:00:00.410, duration_ms=410, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:46:22], mode=BUILD, duration=0:00:00.242, duration_ms=242, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:47:49], mode=BUILD, duration=0:00:00.238, duration_ms=238, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:54:04], mode=BUILD, duration=0:00:00.361, duration_ms=361, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:54:26], mode=BUILD, duration=0:00:00.159, duration_ms=159, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 17:54:28], mode=BUILD, duration=0:00:01.991, duration_ms=1991, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:55:51], mode=PLATFORM_GENERATION, duration=0:00:05.695, duration_ms=5695, data={name=top}
+timestamp=[2023-01-26 17:55:51], mode=BUILD, duration=0:00:00.158, duration_ms=158, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 17:56:31], mode=PLATFORM_GENERATION, duration=0:00:32.850, duration_ms=32850, data={name=top}
+timestamp=[2023-01-26 17:56:31], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 17:56:34], mode=BUILD, duration=0:00:02.364, duration_ms=2364, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 17:59:19], mode=BUILD, duration=0:00:00.925, duration_ms=925, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 18:04:04], mode=PLATFORM_GENERATION, duration=0:00:02.790, duration_ms=2790, data={name=top}
+timestamp=[2023-01-26 18:04:23], mode=BUILD, duration=0:00:00.297, duration_ms=297, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 18:04:38], mode=PLATFORM_GENERATION, duration=0:00:05.631, duration_ms=5631, data={name=top}
+timestamp=[2023-01-26 18:04:38], mode=BUILD, duration=0:00:00.190, duration_ms=190, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 18:04:38], mode=BUILD, duration=0:00:00.102, duration_ms=102, data={name=D3_zu_system, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 18:05:50], mode=PLATFORM_GENERATION, duration=0:00:32.573, duration_ms=32573, data={name=top}
+timestamp=[2023-01-26 18:06:38], mode=PLATFORM_GENERATION, duration=0:00:05.742, duration_ms=5742, data={name=top}
+timestamp=[2023-01-26 18:06:41], mode=BUILD, duration=0:00:02.969, duration_ms=2969, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 18:11:16], mode=PLATFORM_GENERATION, duration=0:00:05.474, duration_ms=5474, data={name=top}
+timestamp=[2023-01-26 18:11:53], mode=PLATFORM_GENERATION, duration=0:00:33.050, duration_ms=33050, data={name=top}
+timestamp=[2023-01-26 18:12:05], mode=PLATFORM_GENERATION, duration=0:00:05.719, duration_ms=5719, data={name=top}
+timestamp=[2023-01-26 18:12:05], mode=BUILD, duration=0:00:00.189, duration_ms=189, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 18:12:42], mode=PLATFORM_GENERATION, duration=0:00:32.602, duration_ms=32602, data={name=top}
+timestamp=[2023-01-26 18:12:45], mode=BUILD, duration=0:00:03.363, duration_ms=3363, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 18:19:04], mode=BUILD, duration=0:00:00.542, duration_ms=542, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 19:21:14], mode=BUILD, duration=0:00:01.017, duration_ms=1017, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 19:21:26], mode=BUILD, duration=0:00:00.275, duration_ms=275, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 19:21:46], mode=BUILD, duration=0:00:00.270, duration_ms=270, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 19:22:03], mode=BUILD, duration=0:00:00.268, duration_ms=268, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 19:22:35], mode=BUILD, duration=0:00:00.203, duration_ms=203, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 19:22:36], mode=BUILD, duration=0:00:01.515, duration_ms=1515, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 19:25:49], mode=PLATFORM_GENERATION, duration=0:00:06.293, duration_ms=6293, data={name=top}
+timestamp=[2023-01-26 19:25:49], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 19:26:29], mode=PLATFORM_GENERATION, duration=0:00:34.850, duration_ms=34850, data={name=top}
+timestamp=[2023-01-26 19:26:31], mode=BUILD, duration=0:00:01.587, duration_ms=1587, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 19:27:46], mode=BUILD, duration=0:00:00.245, duration_ms=245, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-26 19:28:14], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-26 19:28:15], mode=BUILD, duration=0:00:01.180, duration_ms=1180, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 11:51:19], mode=APP_CREATION, duration=0:00:38.063, duration_ms=38063, data={name=D3_udp_proj, project_type=sdk, os=freertos10_xilinx, processor=psu_cortexa53, runtime=cpp, platform=top_1, application_type=application}
+timestamp=[2023-01-27 11:52:13], mode=PLATFORM_GENERATION, duration=0:00:42.498, duration_ms=42498, data={name=top_1}
+timestamp=[2023-01-27 11:52:14], mode=BUILD, duration=0:00:01.185, duration_ms=1185, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 11:54:05], mode=BUILD, duration=0:00:00.474, duration_ms=474, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 13:43:40], mode=PLATFORM_GENERATION, duration=0:00:06.743, duration_ms=6743, data={name=top_1}
+timestamp=[2023-01-27 13:43:45], mode=BUILD, duration=0:00:00.953, duration_ms=953, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:20:06], mode=PLATFORM_GENERATION, duration=0:00:17.799, duration_ms=17799, data={name=top_1}
+timestamp=[2023-01-27 15:20:06], mode=BUILD, duration=0:00:00.261, duration_ms=261, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:20:49], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:21:09], mode=BUILD, duration=0:00:01.011, duration_ms=1011, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:22:18], mode=BUILD, duration=0:00:00.353, duration_ms=353, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:23:15], mode=BUILD, duration=0:00:00.438, duration_ms=438, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:23:50], mode=BUILD, duration=0:00:00.775, duration_ms=775, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:30:35], mode=BUILD, duration=0:00:00.551, duration_ms=551, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:33:55], mode=BUILD, duration=0:00:00.546, duration_ms=546, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:39:12], mode=BUILD, duration=0:00:00.241, duration_ms=241, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:39:48], mode=BUILD, duration=0:00:00.556, duration_ms=556, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:56:46], mode=PLATFORM_GENERATION, duration=0:00:08.601, duration_ms=8601, data={name=top}
+timestamp=[2023-01-27 15:56:47], mode=BUILD, duration=0:00:00.611, duration_ms=611, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:57:37], mode=BUILD, duration=0:00:00.417, duration_ms=417, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 15:59:49], mode=PLATFORM_GENERATION, duration=0:00:02.376, duration_ms=2376, data={name=top_1}
+timestamp=[2023-01-27 16:01:25], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 16:01:30], mode=BUILD, duration=0:00:04.699, duration_ms=4699, data={name=D3_udp_proj_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 16:04:06], mode=BUILD, duration=0:00:00.858, duration_ms=858, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 16:04:19], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 16:23:38], mode=PLATFORM_GENERATION, duration=0:00:17.367, duration_ms=17367, data={name=top_1}
+timestamp=[2023-01-27 16:23:49], mode=BUILD, duration=0:00:01.203, duration_ms=1203, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 16:26:27], mode=PLATFORM_GENERATION, duration=0:00:37.279, duration_ms=37279, data={name=top_1}
+timestamp=[2023-01-27 16:27:01], mode=BUILD, duration=0:00:01.096, duration_ms=1096, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 16:31:50], mode=PLATFORM_GENERATION, duration=0:00:19.765, duration_ms=19765, data={name=top_1}
+timestamp=[2023-01-27 16:55:17], mode=PLATFORM_GENERATION, duration=0:00:20.695, duration_ms=20695, data={name=top_1}
+timestamp=[2023-01-27 16:55:36], mode=BUILD, duration=0:00:01.341, duration_ms=1341, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 16:55:42], mode=BUILD, duration=0:00:04.726, duration_ms=4726, data={name=D3_udp_proj_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:09:09], mode=PLATFORM_GENERATION, duration=0:00:06.550, duration_ms=6550, data={name=top_1}
+timestamp=[2023-01-27 17:09:10], mode=BUILD, duration=0:00:00.846, duration_ms=846, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:37:35], mode=PLATFORM_GENERATION, duration=0:00:02.839, duration_ms=2839, data={name=top}
+timestamp=[2023-01-27 17:37:49], mode=BUILD, duration=0:00:00.299, duration_ms=299, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:39:24], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-27 17:39:25], mode=BUILD, duration=0:00:01.235, duration_ms=1235, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:39:51], mode=BUILD, duration=0:00:00.674, duration_ms=674, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:40:50], mode=BUILD, duration=0:00:01.606, duration_ms=1606, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:43:29], mode=BUILD, duration=0:00:00.438, duration_ms=438, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:43:44], mode=BUILD, duration=0:00:00.309, duration_ms=309, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:48:32], mode=BUILD, duration=0:00:00.304, duration_ms=304, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:50:27], mode=BUILD, duration=0:00:00.297, duration_ms=297, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:50:53], mode=BUILD, duration=0:00:00.324, duration_ms=324, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:52:07], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:52:52], mode=BUILD, duration=0:00:00.232, duration_ms=232, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:53:15], mode=BUILD, duration=0:00:00.489, duration_ms=489, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:53:37], mode=BUILD, duration=0:00:00.292, duration_ms=292, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:54:29], mode=BUILD, duration=0:00:00.316, duration_ms=316, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 17:59:40], mode=BUILD, duration=0:00:00.617, duration_ms=617, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:00:07], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:00:44], mode=BUILD, duration=0:00:01.045, duration_ms=1045, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:04:36], mode=BUILD, duration=0:00:00.542, duration_ms=542, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:07:23], mode=BUILD, duration=0:00:00.990, duration_ms=990, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:12:07], mode=BUILD, duration=0:00:00.498, duration_ms=498, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:13:31], mode=BUILD, duration=0:00:00.437, duration_ms=437, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:13:47], mode=BUILD, duration=0:00:00.799, duration_ms=799, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:35:55], mode=PLATFORM_GENERATION, duration=0:00:17.304, duration_ms=17304, data={name=top}
+timestamp=[2023-01-27 18:36:21], mode=BUILD, duration=0:00:03.660, duration_ms=3660, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:38:56], mode=PLATFORM_GENERATION, duration=0:00:06.915, duration_ms=6915, data={name=top}
+timestamp=[2023-01-27 18:38:56], mode=BUILD, duration=0:00:00.132, duration_ms=132, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-27 18:39:48], mode=PLATFORM_GENERATION, duration=0:00:35.641, duration_ms=35641, data={name=top}
+timestamp=[2023-01-27 18:39:53], mode=BUILD, duration=0:00:05.731, duration_ms=5731, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:43:11], mode=BUILD, duration=0:00:00.241, duration_ms=241, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:43:44], mode=BUILD, duration=0:00:00.491, duration_ms=491, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:44:09], mode=BUILD, duration=0:00:00.191, duration_ms=191, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-27 18:44:12], mode=BUILD, duration=0:00:03.477, duration_ms=3477, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:49:30], mode=BUILD, duration=0:00:00.421, duration_ms=421, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:49:56], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 18:50:08], mode=BUILD, duration=0:00:00.616, duration_ms=616, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 20:20:30], mode=BUILD, duration=0:00:00.320, duration_ms=320, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 20:21:53], mode=BUILD, duration=0:00:00.863, duration_ms=863, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 20:48:28], mode=BUILD, duration=0:00:00.745, duration_ms=745, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 21:00:47], mode=BUILD, duration=0:00:00.544, duration_ms=544, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 21:01:20], mode=BUILD, duration=0:00:00.162, duration_ms=162, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-27 21:01:24], mode=BUILD, duration=0:00:03.410, duration_ms=3410, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 21:02:17], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-27 21:02:20], mode=BUILD, duration=0:00:03.799, duration_ms=3799, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 21:03:56], mode=BUILD, duration=0:00:00.752, duration_ms=752, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 21:04:44], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 21:05:11], mode=BUILD, duration=0:00:00.553, duration_ms=553, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 21:10:58], mode=BUILD, duration=0:00:00.177, duration_ms=177, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-27 21:11:03], mode=BUILD, duration=0:00:04.767, duration_ms=4767, data={name=D3_zu_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 12:36:49], mode=BUILD, duration=0:00:00.836, duration_ms=836, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 12:37:17], mode=BUILD, duration=0:00:01.293, duration_ms=1293, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 13:26:11], mode=APP_CREATION, duration=0:00:02.595, duration_ms=2595, data={name=xaxidma_example_simple_intr_1, project_type=sdk, os=freertos10_xilinx, processor=cortex-a53, runtime=C/C++, platform=top, application_type=application}
+timestamp=[2023-01-28 13:30:32], mode=APP_CREATION, duration=0:00:01.413, duration_ms=1413, data={name=xgpio_example_1, project_type=sdk, os=freertos10_xilinx, processor=cortex-a53, runtime=C/C++, platform=top, application_type=application}
+timestamp=[2023-01-28 13:32:38], mode=BUILD, duration=0:00:00.310, duration_ms=310, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 13:35:34], mode=BUILD, duration=0:00:00.496, duration_ms=496, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 13:36:07], mode=BUILD, duration=0:00:00.741, duration_ms=741, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 13:39:31], mode=BUILD, duration=0:00:00.605, duration_ms=605, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 17:28:20], mode=BUILD, duration=0:00:01.634, duration_ms=1634, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:02:53], mode=BUILD, duration=0:00:00.857, duration_ms=857, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:03:30], mode=BUILD, duration=0:00:00.618, duration_ms=618, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:04:15], mode=BUILD, duration=0:00:00.433, duration_ms=433, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:04:33], mode=BUILD, duration=0:00:00.802, duration_ms=802, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:10:48], mode=BUILD, duration=0:00:00.303, duration_ms=303, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:12:10], mode=BUILD, duration=0:00:00.255, duration_ms=255, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:12:57], mode=BUILD, duration=0:00:00.680, duration_ms=680, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:16:12], mode=BUILD, duration=0:00:00.433, duration_ms=433, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:16:40], mode=BUILD, duration=0:00:00.274, duration_ms=274, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:16:54], mode=BUILD, duration=0:00:00.613, duration_ms=613, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:26:43], mode=APP_CREATION, duration=0:00:02.967, duration_ms=2967, data={name=xsdps_raw_example_1, project_type=sdk, os=freertos10_xilinx, processor=cortex-a53, runtime=C/C++, platform=top, application_type=application}
+timestamp=[2023-01-28 20:32:56], mode=BUILD, duration=0:00:00.296, duration_ms=296, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:33:37], mode=BUILD, duration=0:00:00.489, duration_ms=489, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:35:32], mode=PLATFORM_GENERATION, duration=0:00:10.103, duration_ms=10103, data={name=top}
+timestamp=[2023-01-28 20:35:32], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-28 20:38:06], mode=WORKBENCH_START, duration=0:00:08.371, duration_ms=8371, data={}
+timestamp=[2023-01-28 20:38:07], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.042, duration_ms=42, data={}
+timestamp=[2023-01-28 20:38:07], mode=WORKBENCH_UI_INIT, duration=0:00:01.007, duration_ms=1007, data={editors_count=83, platform_editors_count=22, projects_count=11, platform_projects_count=2, active_platform_editor=false, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xgpio_example_1,xgpio_example_1_system,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-01-28 20:39:31], mode=PLATFORM_GENERATION, duration=0:00:48.815, duration_ms=48815, data={name=top}
+timestamp=[2023-01-28 20:39:50], mode=BUILD, duration=0:00:04.605, duration_ms=4605, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:57:10], mode=APP_CREATION, duration=0:00:01.448, duration_ms=1448, data={name=xsdps_raw_example_1, project_type=sdk, os=freertos10_xilinx, processor=cortex-a53, runtime=C/C++, platform=top, application_type=application}
+timestamp=[2023-01-28 20:57:18], mode=PLATFORM_GENERATION, duration=0:00:02.214, duration_ms=2214, data={name=top}
+timestamp=[2023-01-28 20:57:19], mode=BUILD, duration=0:00:00.508, duration_ms=508, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:57:44], mode=PLATFORM_GENERATION, duration=0:00:05.562, duration_ms=5562, data={name=top}
+timestamp=[2023-01-28 20:57:44], mode=BUILD, duration=0:00:00.125, duration_ms=125, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=true}
+timestamp=[2023-01-28 20:58:32], mode=PLATFORM_GENERATION, duration=0:00:32.005, duration_ms=32005, data={name=top}
+timestamp=[2023-01-28 20:58:33], mode=BUILD, duration=0:00:00.434, duration_ms=434, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:59:20], mode=BUILD, duration=0:00:01.359, duration_ms=1359, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 20:59:24], mode=BUILD, duration=0:00:04.228, duration_ms=4228, data={name=D3_zu_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:00:22], mode=APP_CREATION, duration=0:00:13.361, duration_ms=13361, data={name=xsdps_raw_example_1, project_type=sdk, os=freertos10_xilinx, processor=cortex-a53, runtime=C/C++, platform=top_1, application_type=application}
+timestamp=[2023-01-28 21:11:14], mode=PLATFORM_GENERATION, duration=0:00:02.541, duration_ms=2541, data={name=top_1}
+timestamp=[2023-01-28 21:11:15], mode=BUILD, duration=0:00:00.621, duration_ms=621, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:23:58], mode=PLATFORM_GENERATION, duration=0:00:16.393, duration_ms=16393, data={name=top}
+timestamp=[2023-01-28 21:40:59], mode=BUILD, duration=0:00:02.857, duration_ms=2857, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:41:24], mode=BUILD, duration=0:00:02.123, duration_ms=2123, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:55:00], mode=APP_CREATION, duration=0:00:01.542, duration_ms=1542, data={name=xsdps_raw_example_1, project_type=sdk, os=freertos10_xilinx, processor=cortex-a53, runtime=C/C++, platform=top, application_type=application}
+timestamp=[2023-01-28 21:55:05], mode=BUILD, duration=0:00:00.174, duration_ms=174, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=true}
+timestamp=[2023-01-28 21:55:06], mode=BUILD, duration=0:00:00.366, duration_ms=366, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:55:19], mode=BUILD, duration=0:00:00.171, duration_ms=171, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:55:23], mode=BUILD, duration=0:00:04.014, duration_ms=4014, data={name=D3_zu_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:55:33], mode=PLATFORM_GENERATION, duration=0:00:05.622, duration_ms=5622, data={name=top}
+timestamp=[2023-01-28 21:55:40], mode=PLATFORM_GENERATION, duration=0:00:06.532, duration_ms=6532, data={name=top_1}
+timestamp=[2023-01-28 21:55:40], mode=BUILD, duration=0:00:00.138, duration_ms=138, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=true}
+timestamp=[2023-01-28 21:56:13], mode=PLATFORM_GENERATION, duration=0:00:32.946, duration_ms=32946, data={name=top}
+timestamp=[2023-01-28 21:57:04], mode=PLATFORM_GENERATION, duration=0:00:50.964, duration_ms=50964, data={name=top_1}
+timestamp=[2023-01-28 21:57:04], mode=BUILD, duration=0:00:00.372, duration_ms=372, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:57:12], mode=BUILD, duration=0:00:00.363, duration_ms=363, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:57:34], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:57:42], mode=PLATFORM_GENERATION, duration=0:00:05.298, duration_ms=5298, data={name=top}
+timestamp=[2023-01-28 21:57:47], mode=PLATFORM_GENERATION, duration=0:00:05.407, duration_ms=5407, data={name=top_1}
+timestamp=[2023-01-28 21:57:47], mode=BUILD, duration=0:00:00.109, duration_ms=109, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=true}
+timestamp=[2023-01-28 21:58:24], mode=PLATFORM_GENERATION, duration=0:00:33.636, duration_ms=33636, data={name=top}
+timestamp=[2023-01-28 21:58:58], mode=PLATFORM_GENERATION, duration=0:00:33.733, duration_ms=33733, data={name=top_1}
+timestamp=[2023-01-28 21:58:58], mode=BUILD, duration=0:00:00.597, duration_ms=597, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:59:09], mode=BUILD, duration=0:00:01.552, duration_ms=1552, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:59:17], mode=BUILD, duration=0:00:00.256, duration_ms=256, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:59:22], mode=BUILD, duration=0:00:00.173, duration_ms=173, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 21:59:34], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 22:00:12], mode=BUILD, duration=0:00:00.504, duration_ms=504, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 22:01:05], mode=BUILD, duration=0:00:00.420, duration_ms=420, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-28 22:05:33], mode=PLATFORM_GENERATION, duration=0:00:03.628, duration_ms=3628, data={name=top}
+timestamp=[2023-01-28 22:06:29], mode=PLATFORM_GENERATION, duration=0:00:07.244, duration_ms=7244, data={name=top_1}
+timestamp=[2023-01-28 22:06:52], mode=PLATFORM_GENERATION, duration=0:00:06.789, duration_ms=6789, data={name=top}
+timestamp=[2023-01-28 22:07:34], mode=PLATFORM_GENERATION, duration=0:00:34.839, duration_ms=34839, data={name=top}
+timestamp=[2023-01-28 22:09:13], mode=WORKBENCH_START, duration=0:00:06.010, duration_ms=6010, data={}
+timestamp=[2023-01-28 22:09:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.050, duration_ms=50, data={}
+timestamp=[2023-01-28 22:09:14], mode=WORKBENCH_UI_INIT, duration=0:00:00.978, duration_ms=978, data={editors_count=86, platform_editors_count=25, projects_count=9, platform_projects_count=2, active_platform_editor=true, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-01-28 22:11:23], mode=APP_CREATION, duration=0:00:13.256, duration_ms=13256, data={name=xsdps_raw_example_2, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=top, application_type=application}
+timestamp=[2023-01-28 22:12:24], mode=PLATFORM_GENERATION, duration=0:00:06.997, duration_ms=6997, data={name=top}
+timestamp=[2023-01-28 22:12:25], mode=BUILD, duration=0:00:00.894, duration_ms=894, data={name=xsdps_raw_example_2, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 09:13:57], mode=WORKBENCH_START, duration=0:00:07.805, duration_ms=7805, data={}
+timestamp=[2023-01-29 09:13:57], mode=WORKBENCH_UI_INIT, duration=0:00:00.622, duration_ms=622, data={editors_count=90, platform_editors_count=25, projects_count=11, platform_projects_count=2, active_platform_editor=false, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xsdps_raw_example_1,xsdps_raw_example_1_system,xsdps_raw_example_2,xsdps_raw_example_2_system}
+timestamp=[2023-01-29 09:13:58], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.186, duration_ms=186, data={}
+timestamp=[2023-01-29 09:50:20], mode=WORKBENCH_START, duration=0:00:06.686, duration_ms=6686, data={}
+timestamp=[2023-01-29 09:50:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.121, duration_ms=121, data={}
+timestamp=[2023-01-29 09:50:21], mode=WORKBENCH_UI_INIT, duration=0:00:01.154, duration_ms=1154, data={editors_count=90, platform_editors_count=25, projects_count=11, platform_projects_count=2, active_platform_editor=true, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xsdps_raw_example_1,xsdps_raw_example_1_system,xsdps_raw_example_2,xsdps_raw_example_2_system}
+timestamp=[2023-01-29 10:27:42], mode=PLATFORM_GENERATION, duration=0:00:24.850, duration_ms=24850, data={name=top}
+timestamp=[2023-01-29 10:27:45], mode=BUILD, duration=0:00:02.602, duration_ms=2602, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 10:47:31], mode=PLATFORM_GENERATION, duration=0:00:06.173, duration_ms=6173, data={name=top}
+timestamp=[2023-01-29 10:47:32], mode=BUILD, duration=0:00:01.515, duration_ms=1515, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 14:42:00], mode=APP_CREATION, duration=0:00:02.331, duration_ms=2331, data={name=xaxidma_example_simple_intr_1, project_type=sdk, os=freertos10_xilinx, processor=cortex-a53, runtime=C/C++, platform=top, application_type=application}
+timestamp=[2023-01-29 14:43:39], mode=PLATFORM_GENERATION, duration=0:00:03.435, duration_ms=3435, data={name=top}
+timestamp=[2023-01-29 14:43:40], mode=BUILD, duration=0:00:01.213, duration_ms=1213, data={name=xaxidma_example_simple_intr_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:04:59], mode=PLATFORM_GENERATION, duration=0:00:34.917, duration_ms=34917, data={name=top_1}
+timestamp=[2023-01-29 15:05:14], mode=BUILD, duration=0:00:00.914, duration_ms=914, data={name=D3_udp_proj, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:07:10], mode=BUILD, duration=0:00:00.739, duration_ms=739, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:13:35], mode=BUILD, duration=0:00:00.564, duration_ms=564, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:16:44], mode=BUILD, duration=0:00:00.678, duration_ms=678, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:18:20], mode=BUILD, duration=0:00:00.239, duration_ms=239, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:18:37], mode=BUILD, duration=0:00:00.550, duration_ms=550, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:20:22], mode=BUILD, duration=0:00:00.564, duration_ms=564, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:22:02], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:22:23], mode=BUILD, duration=0:00:00.726, duration_ms=726, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:24:03], mode=BUILD, duration=0:00:00.614, duration_ms=614, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:30:38], mode=BUILD, duration=0:00:01.176, duration_ms=1176, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:31:07], mode=BUILD, duration=0:00:00.585, duration_ms=585, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:33:33], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-01-29 15:33:37], mode=BUILD, duration=0:00:04.282, duration_ms=4282, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:35:57], mode=BUILD, duration=0:00:00.801, duration_ms=801, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:37:24], mode=BUILD, duration=0:00:00.564, duration_ms=564, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:38:31], mode=BUILD, duration=0:00:00.803, duration_ms=803, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:39:51], mode=BUILD, duration=0:00:00.549, duration_ms=549, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:43:08], mode=WORKBENCH_START, duration=0:00:05.920, duration_ms=5920, data={}
+timestamp=[2023-01-29 15:43:09], mode=WORKBENCH_UI_INIT, duration=0:00:00.854, duration_ms=854, data={editors_count=99, platform_editors_count=34, projects_count=11, platform_projects_count=2, active_platform_editor=true, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xaxidma_example_simple_intr_1,xaxidma_example_simple_intr_1_system,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-01-29 15:43:09], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.059, duration_ms=59, data={}
+timestamp=[2023-01-29 15:44:14], mode=PLATFORM_GENERATION, duration=0:00:18.974, duration_ms=18974, data={name=top}
+timestamp=[2023-01-29 15:54:48], mode=BUILD, duration=0:00:04.171, duration_ms=4171, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:55:21], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:55:55], mode=BUILD, duration=0:00:00.616, duration_ms=616, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 15:56:55], mode=BUILD, duration=0:00:00.553, duration_ms=553, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 16:04:48], mode=BUILD, duration=0:00:00.563, duration_ms=563, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 16:10:28], mode=PLATFORM_GENERATION, duration=0:00:03.967, duration_ms=3967, data={name=top}
+timestamp=[2023-01-29 16:10:48], mode=PLATFORM_GENERATION, duration=0:00:16.046, duration_ms=16046, data={name=top}
+timestamp=[2023-01-29 16:14:29], mode=PLATFORM_GENERATION, duration=0:00:18.723, duration_ms=18723, data={name=top}
+timestamp=[2023-01-29 16:14:51], mode=BUILD, duration=0:00:01.698, duration_ms=1698, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 16:14:55], mode=BUILD, duration=0:00:03.145, duration_ms=3145, data={name=D3_zu_system, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 16:15:07], mode=BUILD, duration=0:00:00.175, duration_ms=175, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 16:30:14], mode=BUILD, duration=0:00:00.677, duration_ms=677, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 17:58:49], mode=PLATFORM_GENERATION, duration=0:00:07.891, duration_ms=7891, data={name=top}
+timestamp=[2023-01-29 18:02:18], mode=BUILD, duration=0:00:01.723, duration_ms=1723, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 18:02:22], mode=BUILD, duration=0:00:00.788, duration_ms=788, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 18:05:27], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 18:19:34], mode=PLATFORM_GENERATION, duration=0:00:08.090, duration_ms=8090, data={name=top}
+timestamp=[2023-01-29 18:19:35], mode=BUILD, duration=0:00:00.729, duration_ms=729, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 18:28:38], mode=BUILD, duration=0:00:00.134, duration_ms=134, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 19:00:52], mode=BUILD, duration=0:00:01.803, duration_ms=1803, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 19:49:46], mode=BUILD, duration=0:00:00.622, duration_ms=622, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 19:50:26], mode=BUILD, duration=0:00:00.340, duration_ms=340, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 19:50:37], mode=BUILD, duration=0:00:00.263, duration_ms=263, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 19:51:30], mode=BUILD, duration=0:00:00.977, duration_ms=977, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 20:02:15], mode=BUILD, duration=0:00:00.683, duration_ms=683, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 20:09:59], mode=BUILD, duration=0:00:00.798, duration_ms=798, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-01-29 20:15:22], mode=BUILD, duration=0:00:00.551, duration_ms=551, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-14 20:42:09], mode=WORKBENCH_START, duration=0:00:05.366, duration_ms=5366, data={}
+timestamp=[2023-02-14 20:42:10], mode=WORKBENCH_UI_INIT, duration=0:00:00.941, duration_ms=941, data={editors_count=98, platform_editors_count=40, projects_count=7, platform_projects_count=2, active_platform_editor=true, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1}
+timestamp=[2023-02-14 20:42:10], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.257, duration_ms=257, data={}
+timestamp=[2023-02-14 20:46:12], mode=PLATFORM_GENERATION, duration=0:01:13.971, duration_ms=73971, data={name=top}
+timestamp=[2023-02-14 20:47:24], mode=BUILD, duration=0:00:02.578, duration_ms=2578, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-14 20:47:25], mode=BUILD, duration=0:00:00.347, duration_ms=347, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-14 20:55:54], mode=PLATFORM_GENERATION, duration=0:00:25.186, duration_ms=25186, data={name=top}
+timestamp=[2023-02-14 20:57:05], mode=BUILD, duration=0:00:00.408, duration_ms=408, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-15 21:11:29], mode=WORKBENCH_START, duration=0:00:07.889, duration_ms=7889, data={}
+timestamp=[2023-02-15 21:11:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.238, duration_ms=238, data={}
+timestamp=[2023-02-15 21:11:31], mode=WORKBENCH_UI_INIT, duration=0:00:02.708, duration_ms=2708, data={editors_count=99, platform_editors_count=42, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1}
+timestamp=[2023-02-15 21:12:35], mode=BUILD, duration=0:00:00.360, duration_ms=360, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-15 21:13:21], mode=BUILD, duration=0:00:02.088, duration_ms=2088, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-15 21:14:13], mode=BUILD, duration=0:00:01.385, duration_ms=1385, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 09:20:47], mode=WORKBENCH_START, duration=0:00:08.190, duration_ms=8190, data={}
+timestamp=[2023-02-16 09:20:48], mode=WORKBENCH_UI_INIT, duration=0:00:01.077, duration_ms=1077, data={editors_count=99, platform_editors_count=41, projects_count=7, platform_projects_count=2, active_platform_editor=true, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1}
+timestamp=[2023-02-16 09:20:48], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.226, duration_ms=226, data={}
+timestamp=[2023-02-16 15:33:11], mode=PLATFORM_GENERATION, duration=0:00:02.941, duration_ms=2941, data={name=top}
+timestamp=[2023-02-16 15:34:04], mode=BUILD, duration=0:00:00.197, duration_ms=197, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 15:39:36], mode=PLATFORM_GENERATION, duration=0:00:10.722, duration_ms=10722, data={name=top}
+timestamp=[2023-02-16 15:40:13], mode=BUILD, duration=0:00:01.925, duration_ms=1925, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 16:30:07], mode=BUILD, duration=0:00:00.957, duration_ms=957, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 16:31:53], mode=BUILD, duration=0:00:00.737, duration_ms=737, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 16:33:43], mode=BUILD, duration=0:00:00.614, duration_ms=614, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 16:39:00], mode=BUILD, duration=0:00:00.679, duration_ms=679, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 16:50:03], mode=BUILD, duration=0:00:00.306, duration_ms=306, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 16:50:24], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 16:53:55], mode=BUILD, duration=0:00:01.163, duration_ms=1163, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 16:54:50], mode=BUILD, duration=0:00:00.972, duration_ms=972, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 17:50:12], mode=BUILD, duration=0:00:00.569, duration_ms=569, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 17:50:28], mode=BUILD, duration=0:00:02.040, duration_ms=2040, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 18:14:47], mode=BUILD, duration=0:00:00.355, duration_ms=355, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 18:16:20], mode=BUILD, duration=0:00:00.416, duration_ms=416, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 18:17:04], mode=BUILD, duration=0:00:00.225, duration_ms=225, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 18:17:35], mode=BUILD, duration=0:00:00.987, duration_ms=987, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 18:18:05], mode=BUILD, duration=0:00:00.602, duration_ms=602, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 18:20:53], mode=BUILD, duration=0:00:00.602, duration_ms=602, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 18:22:34], mode=BUILD, duration=0:00:00.543, duration_ms=543, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 18:25:49], mode=BUILD, duration=0:00:00.607, duration_ms=607, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 18:30:44], mode=BUILD, duration=0:00:00.616, duration_ms=616, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 19:20:58], mode=WORKBENCH_START, duration=0:00:09.033, duration_ms=9033, data={}
+timestamp=[2023-02-16 19:20:59], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.164, duration_ms=164, data={}
+timestamp=[2023-02-16 19:20:59], mode=WORKBENCH_UI_INIT, duration=0:00:01.010, duration_ms=1010, data={editors_count=98, platform_editors_count=41, projects_count=7, platform_projects_count=2, active_platform_editor=false, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1}
+timestamp=[2023-02-16 20:22:41], mode=BUILD, duration=0:00:01.628, duration_ms=1628, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 20:34:03], mode=BUILD, duration=0:00:00.790, duration_ms=790, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 20:34:58], mode=BUILD, duration=0:00:00.164, duration_ms=164, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 21:08:11], mode=BUILD, duration=0:00:01.909, duration_ms=1909, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-16 21:11:05], mode=BUILD, duration=0:00:00.159, duration_ms=159, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 10:08:41], mode=BUILD, duration=0:00:00.325, duration_ms=325, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 10:24:22], mode=APP_CREATION, duration=0:00:54.681, duration_ms=54681, data={name=xsdps_raw_example_1, project_type=sdk, os=freertos10_xilinx, processor=cortex-a53, runtime=C/C++, platform=top, application_type=application}
+timestamp=[2023-02-17 10:24:38], mode=PLATFORM_GENERATION, duration=0:00:04.820, duration_ms=4820, data={name=top}
+timestamp=[2023-02-17 10:24:39], mode=BUILD, duration=0:00:01.051, duration_ms=1051, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 10:25:07], mode=BUILD, duration=0:00:00.546, duration_ms=546, data={name=xsdps_raw_example_1, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 10:39:35], mode=PLATFORM_GENERATION, duration=0:00:09.846, duration_ms=9846, data={name=top}
+timestamp=[2023-02-17 10:50:43], mode=BUILD, duration=0:00:01.929, duration_ms=1929, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 10:50:51], mode=BUILD, duration=0:00:00.161, duration_ms=161, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 10:54:56], mode=BUILD, duration=0:00:00.557, duration_ms=557, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 10:55:28], mode=BUILD, duration=0:00:00.536, duration_ms=536, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 10:55:56], mode=BUILD, duration=0:00:00.545, duration_ms=545, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 11:05:52], mode=BUILD, duration=0:00:00.629, duration_ms=629, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 11:16:45], mode=BUILD, duration=0:00:00.553, duration_ms=553, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 11:24:54], mode=BUILD, duration=0:00:00.634, duration_ms=634, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 11:39:40], mode=BUILD, duration=0:00:00.619, duration_ms=619, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 11:41:49], mode=BUILD, duration=0:00:00.560, duration_ms=560, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 11:44:22], mode=BUILD, duration=0:00:00.555, duration_ms=555, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 11:47:08], mode=BUILD, duration=0:00:00.633, duration_ms=633, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 13:52:41], mode=BUILD, duration=0:00:00.331, duration_ms=331, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 13:53:04], mode=BUILD, duration=0:00:01.170, duration_ms=1170, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:20:18], mode=PLATFORM_GENERATION, duration=0:00:18.664, duration_ms=18664, data={name=top}
+timestamp=[2023-02-17 15:20:19], mode=BUILD, duration=0:00:01.003, duration_ms=1003, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:21:46], mode=BUILD, duration=0:00:00.232, duration_ms=232, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:36:54], mode=BUILD, duration=0:00:00.301, duration_ms=301, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:37:45], mode=BUILD, duration=0:00:00.234, duration_ms=234, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:37:58], mode=BUILD, duration=0:00:00.297, duration_ms=297, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:38:53], mode=BUILD, duration=0:00:00.471, duration_ms=471, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:39:06], mode=BUILD, duration=0:00:00.233, duration_ms=233, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:39:16], mode=BUILD, duration=0:00:00.237, duration_ms=237, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:39:40], mode=BUILD, duration=0:00:00.235, duration_ms=235, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:40:06], mode=BUILD, duration=0:00:00.425, duration_ms=425, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:40:41], mode=BUILD, duration=0:00:00.241, duration_ms=241, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:41:21], mode=BUILD, duration=0:00:00.232, duration_ms=232, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:42:28], mode=PLATFORM_GENERATION, duration=0:00:09.266, duration_ms=9266, data={name=top}
+timestamp=[2023-02-17 15:42:28], mode=BUILD, duration=0:00:00.206, duration_ms=206, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-02-17 15:42:28], mode=BUILD, duration=0:00:00.107, duration_ms=107, data={name=D3_zu_system, configuration=Debug, clean_build=true}
+timestamp=[2023-02-17 15:43:36], mode=PLATFORM_GENERATION, duration=0:01:03.004, duration_ms=63004, data={name=top}
+timestamp=[2023-02-17 15:43:38], mode=BUILD, duration=0:00:01.557, duration_ms=1557, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:45:13], mode=BUILD, duration=0:00:00.547, duration_ms=547, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:48:00], mode=BUILD, duration=0:00:00.555, duration_ms=555, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 15:51:26], mode=BUILD, duration=0:00:00.233, duration_ms=233, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 16:01:30], mode=BUILD, duration=0:00:00.228, duration_ms=228, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 16:02:34], mode=BUILD, duration=0:00:00.595, duration_ms=595, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 16:04:05], mode=PLATFORM_GENERATION, duration=0:00:07.791, duration_ms=7791, data={name=top}
+timestamp=[2023-02-17 16:04:05], mode=BUILD, duration=0:00:00.111, duration_ms=111, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-02-17 16:05:04], mode=PLATFORM_GENERATION, duration=0:00:53.780, duration_ms=53780, data={name=top}
+timestamp=[2023-02-17 16:05:06], mode=BUILD, duration=0:00:01.956, duration_ms=1956, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 16:05:50], mode=BUILD, duration=0:00:03.556, duration_ms=3556, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 16:09:00], mode=BUILD, duration=0:00:01.183, duration_ms=1183, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 17:14:10], mode=BUILD, duration=0:00:00.834, duration_ms=834, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 17:14:59], mode=BUILD, duration=0:00:00.170, duration_ms=170, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-02-17 17:15:00], mode=BUILD, duration=0:00:01.294, duration_ms=1294, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 17:15:54], mode=BUILD, duration=0:00:00.233, duration_ms=233, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 17:16:12], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 17:16:29], mode=BUILD, duration=0:00:04.380, duration_ms=4380, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-17 18:16:57], mode=MISC, duration=0:00:05.020, duration_ms=5020, data={name=D3_zu_system, type=bif_creation}
+timestamp=[2023-02-22 20:00:40], mode=WORKBENCH_START, duration=0:00:10.642, duration_ms=10642, data={}
+timestamp=[2023-02-22 20:00:41], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.273, duration_ms=273, data={}
+timestamp=[2023-02-22 20:00:43], mode=WORKBENCH_UI_INIT, duration=0:00:02.848, duration_ms=2848, data={editors_count=99, platform_editors_count=38, projects_count=9, platform_projects_count=2, active_platform_editor=true, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-02-22 20:02:16], mode=PLATFORM_GENERATION, duration=0:00:45.117, duration_ms=45117, data={name=top}
+timestamp=[2023-02-22 20:03:13], mode=BUILD, duration=0:00:02.935, duration_ms=2935, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 20:05:54], mode=WORKBENCH_START, duration=0:00:08.995, duration_ms=8995, data={}
+timestamp=[2023-02-22 20:05:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.055, duration_ms=55, data={}
+timestamp=[2023-02-22 20:05:55], mode=WORKBENCH_UI_INIT, duration=0:00:01.146, duration_ms=1146, data={editors_count=99, platform_editors_count=38, projects_count=9, platform_projects_count=2, active_platform_editor=false, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-02-22 20:38:02], mode=BUILD, duration=0:00:00.915, duration_ms=915, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 20:41:54], mode=BUILD, duration=0:00:00.803, duration_ms=803, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 20:46:16], mode=BUILD, duration=0:00:00.727, duration_ms=727, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 20:51:48], mode=BUILD, duration=0:00:00.742, duration_ms=742, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-22 20:51:53], mode=BUILD, duration=0:00:04.964, duration_ms=4964, data={name=D3_zu_system, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 11:39:00], mode=PLATFORM_GENERATION, duration=0:01:09.020, duration_ms=69020, data={name=top}
+timestamp=[2023-02-23 11:40:11], mode=BUILD, duration=0:00:02.266, duration_ms=2266, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 11:40:38], mode=BUILD, duration=0:00:00.791, duration_ms=791, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 11:40:43], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 14:15:11], mode=PLATFORM_GENERATION, duration=0:00:21.931, duration_ms=21931, data={name=top}
+timestamp=[2023-02-23 14:49:28], mode=PLATFORM_GENERATION, duration=0:00:02.900, duration_ms=2900, data={name=top}
+timestamp=[2023-02-23 14:51:39], mode=PLATFORM_GENERATION, duration=0:00:24.826, duration_ms=24826, data={name=top}
+timestamp=[2023-02-23 14:52:53], mode=PLATFORM_GENERATION, duration=0:00:17.840, duration_ms=17840, data={name=top}
+timestamp=[2023-02-23 14:56:10], mode=PLATFORM_GENERATION, duration=0:00:17.534, duration_ms=17534, data={name=top}
+timestamp=[2023-02-23 15:04:27], mode=WORKBENCH_START, duration=0:00:12.730, duration_ms=12730, data={}
+timestamp=[2023-02-23 15:04:28], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.112, duration_ms=112, data={}
+timestamp=[2023-02-23 15:04:30], mode=WORKBENCH_UI_INIT, duration=0:00:02.825, duration_ms=2825, data={editors_count=91, platform_editors_count=31, projects_count=9, platform_projects_count=2, active_platform_editor=true, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-02-23 15:08:06], mode=PLATFORM_GENERATION, duration=0:00:28.526, duration_ms=28526, data={name=top}
+timestamp=[2023-02-23 15:08:50], mode=PLATFORM_GENERATION, duration=0:00:06.048, duration_ms=6048, data={name=top}
+timestamp=[2023-02-23 15:15:26], mode=PLATFORM_CREATION, duration=0:01:09.647, duration_ms=69647, data={platform_source=dsa, os=freertos10_xilinx, processor=psu_cortexa53, platform=null}
+timestamp=[2023-02-23 15:25:15], mode=PLATFORM_GENERATION, duration=0:00:57.448, duration_ms=57448, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 15:26:26], mode=PLATFORM_GENERATION, duration=0:00:48.403, duration_ms=48403, data={name=top}
+timestamp=[2023-02-23 15:27:56], mode=BUILD, duration=0:00:07.293, duration_ms=7293, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 15:39:17], mode=WORKBENCH_START, duration=0:00:06.179, duration_ms=6179, data={}
+timestamp=[2023-02-23 15:39:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.600, duration_ms=600, data={editors_count=92, platform_editors_count=32, projects_count=10, platform_projects_count=3, active_platform_editor=true, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu3_hw,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-02-23 15:39:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.144, duration_ms=144, data={}
+timestamp=[2023-02-23 15:49:11], mode=PLATFORM_GENERATION, duration=0:00:19.955, duration_ms=19955, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 15:50:20], mode=BUILD, duration=0:00:05.279, duration_ms=5279, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 15:52:22], mode=PLATFORM_GENERATION, duration=0:00:18.937, duration_ms=18937, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 15:52:35], mode=BUILD, duration=0:00:04.871, duration_ms=4871, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 15:52:40], mode=BUILD, duration=0:00:04.823, duration_ms=4823, data={name=D3_zu_system, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 15:56:19], mode=PLATFORM_GENERATION, duration=0:00:16.857, duration_ms=16857, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 16:02:26], mode=WORKBENCH_START, duration=0:00:06.566, duration_ms=6566, data={}
+timestamp=[2023-02-23 16:02:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.570, duration_ms=570, data={editors_count=93, platform_editors_count=32, projects_count=10, platform_projects_count=3, active_platform_editor=false, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu3_hw,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-02-23 16:02:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.044, duration_ms=44, data={}
+timestamp=[2023-02-23 16:09:08], mode=PLATFORM_GENERATION, duration=0:00:17.381, duration_ms=17381, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 16:10:11], mode=BUILD, duration=0:00:04.810, duration_ms=4810, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 16:19:10], mode=PLATFORM_GENERATION, duration=0:00:07.033, duration_ms=7033, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 16:19:18], mode=BUILD, duration=0:00:01.785, duration_ms=1785, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 16:31:20], mode=PLATFORM_GENERATION, duration=0:00:17.820, duration_ms=17820, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 16:31:32], mode=BUILD, duration=0:00:04.793, duration_ms=4793, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 16:33:10], mode=PLATFORM_GENERATION, duration=0:00:07.414, duration_ms=7414, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 16:33:11], mode=BUILD, duration=0:00:00.171, duration_ms=171, data={name=D3_zu, configuration=Debug, clean_build=true}
+timestamp=[2023-02-23 16:33:11], mode=BUILD, duration=0:00:00.102, duration_ms=102, data={name=D3_zu_system, configuration=Debug, clean_build=true}
+timestamp=[2023-02-23 16:33:55], mode=PLATFORM_GENERATION, duration=0:00:40.617, duration_ms=40617, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 16:34:00], mode=BUILD, duration=0:00:05.009, duration_ms=5009, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 18:17:15], mode=WORKBENCH_START, duration=0:00:08.712, duration_ms=8712, data={}
+timestamp=[2023-02-23 18:17:15], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.144, duration_ms=144, data={}
+timestamp=[2023-02-23 18:17:15], mode=WORKBENCH_UI_INIT, duration=0:00:00.895, duration_ms=895, data={editors_count=99, platform_editors_count=39, projects_count=10, platform_projects_count=3, active_platform_editor=false, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu3_hw,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-02-23 18:29:20], mode=WORKBENCH_START, duration=0:00:04.874, duration_ms=4874, data={}
+timestamp=[2023-02-23 18:29:20], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.062, duration_ms=62, data={}
+timestamp=[2023-02-23 18:29:20], mode=WORKBENCH_UI_INIT, duration=0:00:00.836, duration_ms=836, data={editors_count=99, platform_editors_count=39, projects_count=10, platform_projects_count=3, active_platform_editor=true, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu3_hw,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-02-23 19:10:36], mode=WORKBENCH_START, duration=0:00:05.219, duration_ms=5219, data={}
+timestamp=[2023-02-23 19:10:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.750, duration_ms=750, data={editors_count=99, platform_editors_count=39, projects_count=10, platform_projects_count=3, active_platform_editor=true, projects=D3_udp_proj,D3_udp_proj_system,D3_zu,D3_zu3_hw,D3_zu_system,RemoteSystemsTempFiles,top,top_1,xsdps_raw_example_1,xsdps_raw_example_1_system}
+timestamp=[2023-02-23 19:10:36], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.097, duration_ms=97, data={}
+timestamp=[2023-02-23 19:18:52], mode=PLATFORM_GENERATION, duration=0:00:06.378, duration_ms=6378, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 19:21:38], mode=PLATFORM_GENERATION, duration=0:00:44.838, duration_ms=44838, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 19:22:37], mode=BUILD, duration=0:00:05.368, duration_ms=5368, data={name=D3_zu, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 19:57:54], mode=APP_CREATION, duration=0:00:01.410, duration_ms=1410, data={name=NetTest, project_type=sdk, os=freertos10_xilinx, processor=cortex-a53, runtime=C/C++, platform=D3_zu3_hw, application_type=application}
+timestamp=[2023-02-23 19:58:15], mode=BUILD, duration=0:00:00.759, duration_ms=759, data={name=NetTest, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 19:58:34], mode=BUILD, duration=0:00:00.488, duration_ms=488, data={name=NetTest, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 20:09:50], mode=PLATFORM_GENERATION, duration=0:00:07.646, duration_ms=7646, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 20:09:58], mode=BUILD, duration=0:00:00.811, duration_ms=811, data={name=NetTest, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 20:19:26], mode=PLATFORM_GENERATION, duration=0:00:18.178, duration_ms=18178, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 20:19:40], mode=BUILD, duration=0:00:00.919, duration_ms=919, data={name=NetTest, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 20:19:58], mode=BUILD, duration=0:00:00.253, duration_ms=253, data={name=NetTest, configuration=Debug, clean_build=false}
+timestamp=[2023-02-23 20:21:45], mode=PLATFORM_GENERATION, duration=0:00:18.102, duration_ms=18102, data={name=D3_zu3_hw}
+timestamp=[2023-02-23 20:21:56], mode=BUILD, duration=0:00:01.097, duration_ms=1097, data={name=NetTest, configuration=Debug, clean_build=false}

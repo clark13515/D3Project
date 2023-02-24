@@ -1,0 +1,60 @@
+/*** 
+ * @Copyright: Copyright (C) by Benewake Ltd
+ * @file: 
+ * @Brief: 
+ * @FilePath: \D3project\D3_zu\src\protocol\protocol_plcp\protocol_plcp_cmd_map.h
+ * @PROJECT: P4
+ * @COMPILER: GCC
+ * @HW PLATFORM: ARM
+ * @Author: Wang ShiLong
+ * @LastEditors: Wang ShiLong
+ * @Date: 2022-05-26 20:50:26
+ * @LastEditTime: 2023-02-17 15:37:42
+ */
+/*
+ * protocol_plcp_cmd_map.h
+ *
+ *  Created on: 2022/03/18
+ *      Author: jeremy.xiang
+ */
+
+#ifndef __PROTOCOL_PROTOCOL_PLCP_CMD_MAP_H_
+#define __PROTOCOL_PROTOCOL_PLCP_CMD_MAP_H_
+
+#include <stdio.h>
+/* Xilinx includes. */
+#include "xil_types.h"
+#include "xil_io.h"
+#include "protocol_plcp.h"
+
+#define PROTOCOL_PLCP_CMD_MAX               (256)
+
+enum protocol_plcp_cmd_id
+{
+    PROTOCOL_PLCP_CMD_GAIN_CONTROL         = 0x00,    // gain control
+    PROTOCOL_PLCP_CMD_ATT_CONTROL          = 0x01,    // attitude control
+    PROTOCOL_PLCP_CMD_PL_CONTROL           = 0x02,    // PL control
+    PROTOCOL_PLCP_CMD_GET_SRATE_CONTROL    = 0x03,    // sample rate control
+
+    /* OxFF should not used, JUST FOR ENDMARKER */
+    PROTOCOL_PLCP_CMD_END_MARKER             = 0xFF,
+};
+
+typedef int (* protocol_plcp_handle_t)(void *param);
+
+typedef struct{
+    uint8_t  cmd_id;
+    int request_data_length_min;
+    /* -1: variable length */
+    int request_length;
+    /* 1: Configurable at runtime;  0: Not configurable at runtime*/
+    int runtime;
+
+    protocol_plcp_handle_t handle;
+
+} protocol_plcp_cmd_info_t;
+
+
+extern int protocol_plcp_get_cmd_info_with_cmd_id(uint8_t cmd_id, protocol_plcp_cmd_info_t **p_cmd_info);
+
+#endif /*__PROTOCOL_PROTOCOL_PLCP_CMD_MAP_H_*/

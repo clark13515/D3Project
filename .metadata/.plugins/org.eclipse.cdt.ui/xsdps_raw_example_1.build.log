@@ -1,0 +1,21 @@
+10:25:07 **** Incremental Build of configuration Debug for project xsdps_raw_example_1 ****
+make all 
+'Building file: ../src/freertos/port_freertos_hook.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos/port_freertos_hook.o" -ID:/code/2Wproject/D3project/top/export/top/sw/top/freertos10_xilinx_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/freertos/port_freertos_hook.d" -MT"src/freertos/port_freertos_hook.o" -o "src/freertos/port_freertos_hook.o" "../src/freertos/port_freertos_hook.c"
+'Finished building: ../src/freertos/port_freertos_hook.c'
+' '
+'Building target: xsdps_raw_example_1.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/code/2Wproject/D3project/top/export/top/sw/top/freertos10_xilinx_psu_cortexa53_0/bsplib/lib -o "xsdps_raw_example_1.elf"  ./src/freertos/port_freertos_hook.o  ./src/xsdps_raw_example.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: xsdps_raw_example_1.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size xsdps_raw_example_1.elf  |tee "xsdps_raw_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 152985	   7928	 312331	 473244	  7389c	xsdps_raw_example_1.elf
+'Finished building: xsdps_raw_example_1.elf.size'
+' '
+
+10:25:07 Build Finished (took 541ms)
+

@@ -1,0 +1,538 @@
+19:22:32 **** Build of configuration Debug for project D3_zu ****
+make all 
+'Building file: ../src/utilities/fifo.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/utilities/fifo.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/utilities/fifo.d" -MT"src/utilities/fifo.o" -o "src/utilities/fifo.o" "../src/utilities/fifo.c"
+'Finished building: ../src/utilities/fifo.c'
+' '
+'Building file: ../src/utilities/frame.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/utilities/frame.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/utilities/frame.d" -MT"src/utilities/frame.o" -o "src/utilities/frame.o" "../src/utilities/frame.c"
+'Finished building: ../src/utilities/frame.c'
+' '
+'Building file: ../src/utilities/utilities_data_coversion.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/utilities/utilities_data_coversion.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/utilities/utilities_data_coversion.d" -MT"src/utilities/utilities_data_coversion.o" -o "src/utilities/utilities_data_coversion.o" "../src/utilities/utilities_data_coversion.c"
+'Finished building: ../src/utilities/utilities_data_coversion.c'
+' '
+'Building file: ../src/utilities/utilities_plat_common.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/utilities/utilities_plat_common.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/utilities/utilities_plat_common.d" -MT"src/utilities/utilities_plat_common.o" -o "src/utilities/utilities_plat_common.o" "../src/utilities/utilities_plat_common.c"
+'Finished building: ../src/utilities/utilities_plat_common.c'
+' '
+'Building file: ../src/utilities/utilities_ringbuffer.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/utilities/utilities_ringbuffer.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/utilities/utilities_ringbuffer.d" -MT"src/utilities/utilities_ringbuffer.o" -o "src/utilities/utilities_ringbuffer.o" "../src/utilities/utilities_ringbuffer.c"
+../src/utilities/utilities_ringbuffer.c: In function 'utilities_ringbuffer_put':
+../src/utilities/utilities_ringbuffer.c:66:9: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   66 |         memcpy(&rb->buffer_ptr[rb->write_index], ptr, length);
+      |         ^~~~~~
+../src/utilities/utilities_ringbuffer.c:66:9: warning: incompatible implicit declaration of built-in function 'memcpy'
+../src/utilities/utilities_ringbuffer.c:18:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   17 | #include "utilities_ringbuffer.h"
+  +++ |+#include <string.h>
+   18 | 
+../src/utilities/utilities_ringbuffer.c:73:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+   73 |     memcpy(&rb->buffer_ptr[rb->write_index],
+      |     ^~~~~~
+../src/utilities/utilities_ringbuffer.c:73:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+../src/utilities/utilities_ringbuffer.c: In function 'utilities_ringbuffer_put_force':
+../src/utilities/utilities_ringbuffer.c:105:9: warning: incompatible implicit declaration of built-in function 'memcpy'
+  105 |         memcpy(&rb->buffer_ptr[rb->write_index], ptr, length);
+      |         ^~~~~~
+../src/utilities/utilities_ringbuffer.c:105:9: note: include '<string.h>' or provide a declaration of 'memcpy'
+../src/utilities/utilities_ringbuffer.c:116:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+  116 |     memcpy(&rb->buffer_ptr[rb->write_index],
+      |     ^~~~~~
+../src/utilities/utilities_ringbuffer.c:116:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+../src/utilities/utilities_ringbuffer.c: In function 'utilities_ringbuffer_get':
+../src/utilities/utilities_ringbuffer.c:158:9: warning: incompatible implicit declaration of built-in function 'memcpy'
+  158 |         memcpy(ptr, &rb->buffer_ptr[rb->read_index], length);
+      |         ^~~~~~
+../src/utilities/utilities_ringbuffer.c:158:9: note: include '<string.h>' or provide a declaration of 'memcpy'
+../src/utilities/utilities_ringbuffer.c:165:5: warning: incompatible implicit declaration of built-in function 'memcpy'
+  165 |     memcpy(&ptr[0],
+      |     ^~~~~~
+../src/utilities/utilities_ringbuffer.c:165:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+'Finished building: ../src/utilities/utilities_ringbuffer.c'
+' '
+'Building file: ../src/utilities/utility.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/utilities/utility.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/utilities/utility.d" -MT"src/utilities/utility.o" -o "src/utilities/utility.o" "../src/utilities/utility.c"
+'Finished building: ../src/utilities/utility.c'
+' '
+'Building file: ../src/service/ethernet/if_protocol.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/service/ethernet/if_protocol.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/service/ethernet/if_protocol.d" -MT"src/service/ethernet/if_protocol.o" -o "src/service/ethernet/if_protocol.o" "../src/service/ethernet/if_protocol.c"
+'Finished building: ../src/service/ethernet/if_protocol.c'
+' '
+'Building file: ../src/service/ethernet/service_ethernet.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/service/ethernet/service_ethernet.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/service/ethernet/service_ethernet.d" -MT"src/service/ethernet/service_ethernet.o" -o "src/service/ethernet/service_ethernet.o" "../src/service/ethernet/service_ethernet.c"
+In file included from D:\code\2Wproject\D3project\D3_zu\src\utilities/utilities.h:21,
+                 from ../src/service/ethernet/service_ethernet.c:16:
+D:\code\2Wproject\D3project\D3_zu\src\utilities/crc32/utilities_crc32.h:31:8: warning: "/*" within comment [-Wcomment]
+   31 | #endif /* __UTILITIES_CRC32_H__ */
+      |         
+In file included from D:\code\2Wproject\D3project\D3_zu\src\utilities/utilities.h:24,
+                 from ../src/service/ethernet/service_ethernet.c:16:
+D:\code\2Wproject\D3project\D3_zu\src\utilities/utilities_plat_common.h:44:20: warning: inline function 'ModuleInitcall' declared but never defined
+   44 | extern inline void ModuleInitcall(enum module_init_type mod);
+      |                    ^~~~~~~~~~~~~~
+'Finished building: ../src/service/ethernet/service_ethernet.c'
+' '
+'Building file: ../src/protocol/protocol_plcp/protocol_plcp.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/protocol/protocol_plcp/protocol_plcp.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/protocol/protocol_plcp/protocol_plcp.d" -MT"src/protocol/protocol_plcp/protocol_plcp.o" -o "src/protocol/protocol_plcp/protocol_plcp.o" "../src/protocol/protocol_plcp/protocol_plcp.c"
+'Finished building: ../src/protocol/protocol_plcp/protocol_plcp.c'
+' '
+'Building file: ../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/protocol/protocol_plcp/protocol_plcp_cmd_handle.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/protocol/protocol_plcp/protocol_plcp_cmd_handle.d" -MT"src/protocol/protocol_plcp/protocol_plcp_cmd_handle.o" -o "src/protocol/protocol_plcp/protocol_plcp_cmd_handle.o" "../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c"
+In file included from D:\code\2Wproject\D3project\D3_zu\src\utilities/utilities.h:21,
+                 from ../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c:25:
+D:\code\2Wproject\D3project\D3_zu\src\utilities/crc32/utilities_crc32.h:31:8: warning: "/*" within comment [-Wcomment]
+   31 | #endif /* __UTILITIES_CRC32_H__ */
+      |         
+../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c: In function 'protocol_plcp_reg_control':
+../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c:54:9: warning: unused variable 'ret' [-Wunused-variable]
+   54 |     int ret = 0;
+      |         ^~~
+../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c:48:24: warning: unused variable 'response' [-Wunused-variable]
+   48 |     protocol_plcp_t   *response = plcp_handle_info->response;
+      |                        ^~~~~~~~
+In file included from D:\code\2Wproject\D3project\D3_zu\src\utilities/utilities.h:24,
+                 from ../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c:25:
+../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c: At top level:
+D:\code\2Wproject\D3project\D3_zu\src\utilities/utilities_plat_common.h:44:20: warning: inline function 'ModuleInitcall' declared but never defined
+   44 | extern inline void ModuleInitcall(enum module_init_type mod);
+      |                    ^~~~~~~~~~~~~~
+../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c:40:13: warning: 'plcp_callback' defined but not used [-Wunused-function]
+   40 | static void plcp_callback(TimerHandle_t xTimer)
+      |             ^~~~~~~~~~~~~
+../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c:38:12: warning: 'plcp_timeout' defined but not used [-Wunused-variable]
+   38 | static int plcp_timeout = PLCP_TIMEOUT_COUNT;
+      |            ^~~~~~~~~~~~
+../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c:37:23: warning: 'g_plcp_timer' defined but not used [-Wunused-variable]
+   37 | static StaticTimer_t  g_plcp_timer;
+      |                       ^~~~~~~~~~~~
+../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c:36:23: warning: 'g_plcp_timer_handle' defined but not used [-Wunused-variable]
+   36 | static TimerHandle_t  g_plcp_timer_handle = NULL;
+      |                       ^~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/protocol/protocol_plcp/protocol_plcp_cmd_handle.c'
+' '
+'Building file: ../src/protocol/protocol_plcp/protocol_plcp_cmd_map.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/protocol/protocol_plcp/protocol_plcp_cmd_map.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/protocol/protocol_plcp/protocol_plcp_cmd_map.d" -MT"src/protocol/protocol_plcp/protocol_plcp_cmd_map.o" -o "src/protocol/protocol_plcp/protocol_plcp_cmd_map.o" "../src/protocol/protocol_plcp/protocol_plcp_cmd_map.c"
+../src/protocol/protocol_plcp/protocol_plcp_cmd_map.c:29:66: warning: initialization of 'int (*)(void *)' from incompatible pointer type 'protocol_plcp_err_t (*)(void *)' [-Wincompatible-pointer-types]
+   29 |     {PROTOCOL_PLCP_CMD_GAIN_CONTROL        ,   0x00, 0x00, 0x01, protocol_plcp_reg_control              },
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/protocol/protocol_plcp/protocol_plcp_cmd_map.c:29:66: note: (near initialization for 'g_protocol_plcp_cmd_info[0].handle')
+../src/protocol/protocol_plcp/protocol_plcp_cmd_map.c: In function 'protocol_plcp_get_cmd_info_with_cmd_id':
+../src/protocol/protocol_plcp/protocol_plcp_cmd_map.c:60:17: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   60 |     *p_cmd_info = &g_protocol_plcp_cmd_info[cmd_idx];
+      |                 ^
+'Finished building: ../src/protocol/protocol_plcp/protocol_plcp_cmd_map.c'
+' '
+'Building file: ../src/protocol/protocol_plcp/protocol_plcp_common.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/protocol/protocol_plcp/protocol_plcp_common.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/protocol/protocol_plcp/protocol_plcp_common.d" -MT"src/protocol/protocol_plcp/protocol_plcp_common.o" -o "src/protocol/protocol_plcp/protocol_plcp_common.o" "../src/protocol/protocol_plcp/protocol_plcp_common.c"
+In file included from D:\code\2Wproject\D3project\D3_zu\src\utilities/utilities.h:21,
+                 from ../src/protocol/protocol_plcp/protocol_plcp_common.c:29:
+D:\code\2Wproject\D3project\D3_zu\src\utilities/crc32/utilities_crc32.h:31:8: warning: "/*" within comment [-Wcomment]
+   31 | #endif /* __UTILITIES_CRC32_H__ */
+      |         
+In file included from D:\code\2Wproject\D3project\D3_zu\src\utilities/utilities.h:24,
+                 from ../src/protocol/protocol_plcp/protocol_plcp_common.c:29:
+D:\code\2Wproject\D3project\D3_zu\src\utilities/utilities_plat_common.h:44:20: warning: inline function 'ModuleInitcall' declared but never defined
+   44 | extern inline void ModuleInitcall(enum module_init_type mod);
+      |                    ^~~~~~~~~~~~~~
+'Finished building: ../src/protocol/protocol_plcp/protocol_plcp_common.c'
+' '
+'Building file: ../src/protocol/protocol_adcompass.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/protocol/protocol_adcompass.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/protocol/protocol_adcompass.d" -MT"src/protocol/protocol_adcompass.o" -o "src/protocol/protocol_adcompass.o" "../src/protocol/protocol_adcompass.c"
+../src/protocol/protocol_adcompass.c: In function 'protocol_adcps_ps_pl_parse':
+../src/protocol/protocol_adcompass.c:71:14: warning: unused variable 'index' [-Wunused-variable]
+   71 |     uint32_t index = 0;
+      |              ^~~~~
+../src/protocol/protocol_adcompass.c: In function 'protocol_adcps_send_init':
+../src/protocol/protocol_adcompass.c:79:47: warning: assignment to 'uint8_t *' {aka 'unsigned char *'} from incompatible pointer type 'uint8_t (*)[1024]' {aka 'unsigned char (*)[1024]'} [-Wincompatible-pointer-types]
+   79 |     g_protocol_adcps_send_data_buffer_list[0] = &g_protocol_adcps_send_data_buffer0;
+      |                                               ^
+../src/protocol/protocol_adcompass.c:80:47: warning: assignment to 'uint8_t *' {aka 'unsigned char *'} from incompatible pointer type 'uint8_t (*)[1024]' {aka 'unsigned char (*)[1024]'} [-Wincompatible-pointer-types]
+   80 |     g_protocol_adcps_send_data_buffer_list[1] = &g_protocol_adcps_send_data_buffer1;
+      |                                               ^
+../src/protocol/protocol_adcompass.c: In function 'protocol_adcps_send':
+../src/protocol/protocol_adcompass.c:120:13: warning: unused variable 'send_index' [-Wunused-variable]
+  120 |     uint8_t send_index = 0;
+      |             ^~~~~~~~~~
+../src/protocol/protocol_adcompass.c:118:14: warning: unused variable 'n_emit' [-Wunused-variable]
+  118 |     uint16_t n_emit = 0;
+      |              ^~~~~~
+../src/protocol/protocol_adcompass.c:116:9: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+  116 |     int ret = 0;
+      |         ^~~
+At top level:
+../src/protocol/protocol_adcompass.c:34:32: warning: 'g_protocol_adcps_ps_pl_count_pre' defined but not used [-Wunused-variable]
+   34 | static uint16_t                g_protocol_adcps_ps_pl_count_pre   = 0;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/protocol/protocol_adcompass.c'
+' '
+'Building file: ../src/middleware/sys_manager/sys_manager.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/middleware/sys_manager/sys_manager.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/middleware/sys_manager/sys_manager.d" -MT"src/middleware/sys_manager/sys_manager.o" -o "src/middleware/sys_manager/sys_manager.o" "../src/middleware/sys_manager/sys_manager.c"
+'Finished building: ../src/middleware/sys_manager/sys_manager.c'
+' '
+'Building file: ../src/middleware/osif/osif_common.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/middleware/osif/osif_common.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/middleware/osif/osif_common.d" -MT"src/middleware/osif/osif_common.o" -o "src/middleware/osif/osif_common.o" "../src/middleware/osif/osif_common.c"
+'Finished building: ../src/middleware/osif/osif_common.c'
+' '
+'Building file: ../src/middleware/osif/osif_ext.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/middleware/osif/osif_ext.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/middleware/osif/osif_ext.d" -MT"src/middleware/osif/osif_ext.o" -o "src/middleware/osif/osif_ext.o" "../src/middleware/osif/osif_ext.c"
+In file included from D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/event_groups.h:35,
+                 from ../src/middleware/osif/osif_ext.h:18,
+                 from ../src/middleware/osif/osif_ext.c:8:
+../src/middleware/osif/osif_ext.c: In function 'OSIF_TimerStart':
+../src/middleware/osif/osif_ext.c:345:34: warning: passing argument 1 of 'xTimerGenericCommand' from incompatible pointer type [-Wincompatible-pointer-types]
+  345 |         ret = xTimerStartFromISR((TimerHandle_t*)xTimer, &HigherPriorityTaskWoken);
+D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/timers.h:883:29: note: in definition of macro 'xTimerStartFromISR'
+  883 |     xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START_FROM_ISR, ( xTaskGetTickCountFromISR() ), ( pxHigherPriorityTaskWoken ), 0U )
+      |                             ^~~~~~
+D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/timers.h:1315:48: note: expected 'TimerHandle_t' {aka 'struct tmrTimerControl *'} but argument is of type 'struct tmrTimerControl **'
+ 1315 | BaseType_t xTimerGenericCommand( TimerHandle_t xTimer,
+      |                                  ~~~~~~~~~~~~~~^~~~~~
+../src/middleware/osif/osif_ext.c:348:27: warning: passing argument 1 of 'xTimerGenericCommand' from incompatible pointer type [-Wincompatible-pointer-types]
+  348 |         ret = xTimerStart((TimerHandle_t*)xTimer, 0);
+D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/timers.h:508:29: note: in definition of macro 'xTimerStart'
+  508 |     xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START, ( xTaskGetTickCount() ), NULL, ( xTicksToWait ) )
+      |                             ^~~~~~
+D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/timers.h:1315:48: note: expected 'TimerHandle_t' {aka 'struct tmrTimerControl *'} but argument is of type 'struct tmrTimerControl **'
+ 1315 | BaseType_t xTimerGenericCommand( TimerHandle_t xTimer,
+      |                                  ~~~~~~~~~~~~~~^~~~~~
+../src/middleware/osif/osif_ext.c: In function 'OSIF_TimerStop':
+../src/middleware/osif/osif_ext.c:358:33: warning: passing argument 1 of 'xTimerGenericCommand' from incompatible pointer type [-Wincompatible-pointer-types]
+  358 |         ret = xTimerStopFromISR((TimerHandle_t*)xTimer, &HigherPriorityTaskWoken);
+D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/timers.h:947:29: note: in definition of macro 'xTimerStopFromISR'
+  947 |     xTimerGenericCommand( ( xTimer ), tmrCOMMAND_STOP_FROM_ISR, 0, ( pxHigherPriorityTaskWoken ), 0U )
+      |                             ^~~~~~
+D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/timers.h:1315:48: note: expected 'TimerHandle_t' {aka 'struct tmrTimerControl *'} but argument is of type 'struct tmrTimerControl **'
+ 1315 | BaseType_t xTimerGenericCommand( TimerHandle_t xTimer,
+      |                                  ~~~~~~~~~~~~~~^~~~~~
+../src/middleware/osif/osif_ext.c:361:26: warning: passing argument 1 of 'xTimerGenericCommand' from incompatible pointer type [-Wincompatible-pointer-types]
+  361 |         ret = xTimerStop((TimerHandle_t*)xTimer, 0);
+D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/timers.h:551:29: note: in definition of macro 'xTimerStop'
+  551 |     xTimerGenericCommand( ( xTimer ), tmrCOMMAND_STOP, 0U, NULL, ( xTicksToWait ) )
+      |                             ^~~~~~
+D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/timers.h:1315:48: note: expected 'TimerHandle_t' {aka 'struct tmrTimerControl *'} but argument is of type 'struct tmrTimerControl **'
+ 1315 | BaseType_t xTimerGenericCommand( TimerHandle_t xTimer,
+      |                                  ~~~~~~~~~~~~~~^~~~~~
+'Finished building: ../src/middleware/osif/osif_ext.c'
+' '
+'Building file: ../src/middleware/osif/osif_freertos.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/middleware/osif/osif_freertos.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/middleware/osif/osif_freertos.d" -MT"src/middleware/osif/osif_freertos.o" -o "src/middleware/osif/osif_freertos.o" "../src/middleware/osif/osif_freertos.c"
+In file included from D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/portable.h:51,
+                 from D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/FreeRTOS.h:63,
+                 from ../src/middleware/osif/osif_ext.h:15,
+                 from ../src/middleware/osif/osif_freertos.h:12,
+                 from ../src/middleware/osif/osif_freertos.c:8:
+../src/middleware/osif/osif_freertos.c: In function 'OSIF_MutexLock':
+D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/portmacro.h:71:23: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709551615' to '4294967295' [-Woverflow]
+   71 | #define portMAX_DELAY ( ( TickType_t ) 0xffffffffffffffff )
+      |                       ^
+../src/middleware/osif/osif_freertos.c:77:32: note: in expansion of macro 'portMAX_DELAY'
+   77 |                 timeoutTicks = portMAX_DELAY;
+      |                                ^~~~~~~~~~~~~
+../src/middleware/osif/osif_freertos.c: In function 'OSIF_SemaWait':
+D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/portmacro.h:71:23: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709551615' to '4294967295' [-Woverflow]
+   71 | #define portMAX_DELAY ( ( TickType_t ) 0xffffffffffffffff )
+      |                       ^
+../src/middleware/osif/osif_freertos.c:188:24: note: in expansion of macro 'portMAX_DELAY'
+  188 |         timeoutTicks = portMAX_DELAY;
+      |                        ^~~~~~~~~~~~~
+'Finished building: ../src/middleware/osif/osif_freertos.c'
+' '
+'Building file: ../src/freertos/port_freertos_hook.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/freertos/port_freertos_hook.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/freertos/port_freertos_hook.d" -MT"src/freertos/port_freertos_hook.o" -o "src/freertos/port_freertos_hook.o" "../src/freertos/port_freertos_hook.c"
+'Finished building: ../src/freertos/port_freertos_hook.c'
+' '
+'Building file: ../src/driver/dma_intr.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/driver/dma_intr.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/driver/dma_intr.d" -MT"src/driver/dma_intr.o" -o "src/driver/dma_intr.o" "../src/driver/dma_intr.c"
+../src/driver/dma_intr.c:12:1: warning: "/*" within comment [-Wcomment]
+   12 | /****************************************************/
+      |  
+In file included from ../src/driver/dma_intr.c:13:
+../src/driver/dma_intr.h:25:1: warning: "/*" within comment [-Wcomment]
+   25 | /****************************************************/
+      |  
+../src/driver/dma_intr.c:104:13: warning: 'DMA_TxIntrHandler' defined but not used [-Wunused-function]
+  104 | static void DMA_TxIntrHandler(void *Callback)
+      |             ^~~~~~~~~~~~~~~~~
+'Finished building: ../src/driver/dma_intr.c'
+' '
+'Building file: ../src/driver/gpiopl_intr.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/driver/gpiopl_intr.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/driver/gpiopl_intr.d" -MT"src/driver/gpiopl_intr.o" -o "src/driver/gpiopl_intr.o" "../src/driver/gpiopl_intr.c"
+../src/driver/gpiopl_intr.c: In function 'Gpiopl_initall':
+../src/driver/gpiopl_intr.c:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+   60 | }
+      | ^
+'Finished building: ../src/driver/gpiopl_intr.c'
+' '
+'Building file: ../src/driver/sdcard.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/driver/sdcard.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/driver/sdcard.d" -MT"src/driver/sdcard.o" -o "src/driver/sdcard.o" "../src/driver/sdcard.c"
+../src/driver/sdcard.c: In function 'sd_write_data':
+../src/driver/sdcard.c:80:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   80 |  f_write (&fil, (void*)src_addr,byte_len,&bw);
+      |                 ^
+../src/driver/sdcard.c: In function 'sd_write_data_withoffset':
+../src/driver/sdcard.c:96:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   96 |  f_write (&fil, (void*)src_addr,byte_len,&bw);
+      |                 ^
+../src/driver/sdcard.c: In function 'sd_read_data':
+../src/driver/sdcard.c:113:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  113 |  f_read(&fil,(void*)src_addr,byte_len,&br);
+      |              ^
+../src/driver/sdcard.c: In function 'sdcard_demo':
+../src/driver/sdcard.c:125:26: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  125 |  sd_write_data(FILE_NAME,(u32)src_str,len); //写入数据
+      |                          ^
+../src/driver/sdcard.c:126:25: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  126 |  sd_read_data(FILE_NAME,(u32)dest_str,len); //读取数据
+      |                         ^
+../src/driver/sdcard.c:121:6: warning: unused variable 'status' [-Wunused-variable]
+  121 |  int status,len;
+      |      ^~~~~~
+'Finished building: ../src/driver/sdcard.c'
+' '
+'Building file: ../src/driver/sys_intr.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/driver/sys_intr.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/driver/sys_intr.d" -MT"src/driver/sys_intr.o" -o "src/driver/sys_intr.o" "../src/driver/sys_intr.c"
+'Finished building: ../src/driver/sys_intr.c'
+' '
+'Building file: ../src/app/task_DMAtrans.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/app/task_DMAtrans.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/app/task_DMAtrans.d" -MT"src/app/task_DMAtrans.o" -o "src/app/task_DMAtrans.o" "../src/app/task_DMAtrans.c"
+In file included from ../src/app/task_DMAtrans.c:38:
+D:\code\2Wproject\D3project\D3_zu\src\driver/dma_intr.h:25:1: warning: "/*" within comment [-Wcomment]
+   25 | /****************************************************/
+      |  
+In file included from ../src/app/task_DMAtrans.c:43:
+../src/app/task_sdcard.h:20:8: warning: type defaults to 'int' in declaration of 'task_sdcard_send_give_rx_buffer_info' [-Wimplicit-int]
+   20 | extern task_sdcard_send_give_rx_buffer_info(dma_rx_buffer_info_t **rx_buffer);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/task_DMAtrans.c: In function 'AppDMATRANSHandlerThread':
+../src/app/task_DMAtrans.c:90:46: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   90 |      Status = XAxiDma_SimpleTransfer(&AxiDma,(u32)RxBufferPtr[rxCnt&1],(u32)(MAX_PKT_LEN), XAXIDMA_DEVICE_TO_DMA);
+      |                                              ^
+In file included from D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/xaxidma_bdring.h:60,
+                 from D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/xaxidma.h:467,
+                 from D:\code\2Wproject\D3project\D3_zu\src\driver/dma_intr.h:28,
+                 from ../src/app/task_DMAtrans.c:38:
+D:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/app/task_DMAtrans.c:99:41: note: in expansion of macro 'XST_FAILURE'
+   99 |      if (Status != XST_SUCCESS) {return XST_FAILURE;}
+      |                                         ^~~~~~~~~~~
+../src/app/task_DMAtrans.c:73:6: note: declared here
+   73 | void AppDMATRANSHandlerThread(void *pvParameters)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/task_DMAtrans.c:104:28: warning: assignment discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  104 |             rx_buffer_info = &g_dma_rx_buffer_info[rxCnt&1];
+      |                            ^
+../src/app/task_DMAtrans.c:105:30: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  105 |    Xil_DCacheInvalidateRange((u32)RxBufferPtr[rxCnt&1], MAX_PKT_LEN);
+      |                              ^
+../src/app/task_DMAtrans.c: In function 'task_dmatrans_init':
+../src/app/task_DMAtrans.c:144:20: warning: assignment to 'u8 *' {aka 'unsigned char *'} from incompatible pointer type 'u32 *' {aka 'unsigned int *'} [-Wincompatible-pointer-types]
+  144 |     RxBufferPtr[0] = (u32 *)RX_BUFFER0_BASE;
+      |                    ^
+../src/app/task_DMAtrans.c:145:20: warning: assignment to 'u8 *' {aka 'unsigned char *'} from incompatible pointer type 'u32 *' {aka 'unsigned int *'} [-Wincompatible-pointer-types]
+  145 |     RxBufferPtr[1] = (u32 *)RX_BUFFER1_BASE;
+      |                    ^
+../src/app/task_DMAtrans.c:147:34: warning: assignment to 'UINTPTR' {aka 'volatile long unsigned int'} from 'u8 *' {aka 'unsigned char *'} makes integer from pointer without a cast [-Wint-conversion]
+  147 |     g_dma_rx_buffer_info[0].addr = RxBufferPtr[0];
+      |                                  ^
+../src/app/task_DMAtrans.c:148:34: warning: assignment to 'UINTPTR' {aka 'volatile long unsigned int'} from 'u8 *' {aka 'unsigned char *'} makes integer from pointer without a cast [-Wint-conversion]
+  148 |     g_dma_rx_buffer_info[1].addr = RxBufferPtr[1];
+      |                                  ^
+../src/app/task_DMAtrans.c: At top level:
+../src/app/task_DMAtrans.c:164:1: warning: data definition has no type or storage class
+  164 | BDEV_MODULE_INIT_DECLARE(task_dmatrans_init);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/task_DMAtrans.c:164:1: warning: type defaults to 'int' in declaration of 'BDEV_MODULE_INIT_DECLARE' [-Wimplicit-int]
+../src/app/task_DMAtrans.c:164:1: warning: parameter names (without types) in function declaration
+../src/app/task_DMAtrans.c:67:27: warning: 'pDMATRANSHandlerTaskHandle' defined but not used [-Wunused-variable]
+   67 | static TaskHandle_t       pDMATRANSHandlerTaskHandle = NULL;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/app/task_DMAtrans.c'
+' '
+'Building file: ../src/app/task_adcps_send.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/app/task_adcps_send.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/app/task_adcps_send.d" -MT"src/app/task_adcps_send.o" -o "src/app/task_adcps_send.o" "../src/app/task_adcps_send.c"
+In file included from ../src/app/task_adcps_send.h:18,
+                 from ../src/app/task_adcps_send.c:16:
+D:\code\2Wproject\D3project\D3_zu\src\driver/dma_intr.h:25:1: warning: "/*" within comment [-Wcomment]
+   25 | /****************************************************/
+      |  
+../src/app/task_adcps_send.c: In function 'task_adcps_send_handler':
+../src/app/task_adcps_send.c:109:44: warning: assignment to 'uint8_t *' {aka 'unsigned char *'} from 'UINTPTR' {aka 'long unsigned int'} makes pointer from integer without a cast [-Wint-conversion]
+  109 |                 adcps_ps_pl_send.send_data = p_rx_buffer_info->addr;
+      |                                            ^
+At top level:
+../src/app/task_adcps_send.c:42:36: warning: 'g_protocol_adcps_ps_pl_send' defined but not used [-Wunused-variable]
+   42 | static protocol_adcps_ps_pl_send_t g_protocol_adcps_ps_pl_send;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/task_adcps_send.c:41:36: warning: 'g_protocol_adcps_ps_pl' defined but not used [-Wunused-variable]
+   41 | static protocol_adcps_ps_pl_t      g_protocol_adcps_ps_pl;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/app/task_adcps_send.c'
+' '
+'Building file: ../src/app/task_init.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/app/task_init.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/app/task_init.d" -MT"src/app/task_init.o" -o "src/app/task_init.o" "../src/app/task_init.c"
+../src/app/task_init.c: In function 'task_init_eth_lwip_stack_init':
+../src/app/task_init.c:217:49: warning: passing argument 1 of 'task_init_eth_get_dhcp_flag_from_config_ini' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  217 |     task_init_eth_get_dhcp_flag_from_config_ini(&g_task_init_eth_dhcp_enable_flag);
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/task_init.c:104:67: note: expected 'uint32_t *' {aka 'unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile unsigned int *'}
+  104 | static void task_init_eth_get_dhcp_flag_from_config_ini(uint32_t *dhcp_flag)
+      |                                                         ~~~~~~~~~~^~~~~~~~~
+../src/app/task_init.c: In function 'task_init_handler':
+../src/app/task_init.c:277:9: warning: unused variable 'ret' [-Wunused-variable]
+  277 |     int ret = 0;
+      |         ^~~
+'Finished building: ../src/app/task_init.c'
+' '
+'Building file: ../src/app/task_sdcard.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/app/task_sdcard.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/app/task_sdcard.d" -MT"src/app/task_sdcard.o" -o "src/app/task_sdcard.o" "../src/app/task_sdcard.c"
+In file included from ../src/app/task_sdcard.c:26:
+D:\code\2Wproject\D3project\D3_zu\src\driver/dma_intr.h:25:1: warning: "/*" within comment [-Wcomment]
+   25 | /****************************************************/
+      |  
+../src/app/task_sdcard.c: In function 'hex_to_str':
+../src/app/task_sdcard.c:75:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   75 |         sprintf(str+pos,  "%02x", hex[i]);
+      |         ^~~~~~~
+../src/app/task_sdcard.c:75:9: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/app/task_sdcard.c:28:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   27 | #include "utilities_data_coversion.h"
+  +++ |+#include <stdio.h>
+   28 | 
+../src/app/task_sdcard.c: In function 'init_file_names':
+../src/app/task_sdcard.c:90:10: warning: incompatible implicit declaration of built-in function 'sprintf'
+   90 |          sprintf(g_file_names[i],  "datafile_%d",i);
+      |          ^~~~~~~
+../src/app/task_sdcard.c:90:10: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/app/task_sdcard.c: In function 'AppSDcardHandlerThread':
+../src/app/task_sdcard.c:169:37: warning: pointer targets in passing argument 1 of 'protocol_sdcard_package' differ in signedness [-Wpointer-sign]
+  169 |             protocol_sdcard_package(recdatabuf);
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     char *
+../src/app/task_sdcard.c:108:38: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  108 | int protocol_sdcard_package(uint8_t *data)
+      |                             ~~~~~~~~~^~~~
+../src/app/task_sdcard.c:181:64: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  181 |              sd_write_data_withoffset(g_file_names[file_index],(u32)txtbuf,txt_cur,offset);
+      |                                                                ^
+../src/app/task_sdcard.c:45:49: warning: integer overflow in expression of type 'int' results in '-2143289344' [-Woverflow]
+   45 | #define SDCARD_MAX_FILE_SIZE       (1*1024*10244*1024)
+      |                                                 ^
+../src/app/task_sdcard.c:185:38: note: in expansion of macro 'SDCARD_MAX_FILE_SIZE'
+  185 |                 if(file_write_cnt > (SDCARD_MAX_FILE_SIZE/(SDCARD_TXT_BUF_SIZE*SDCARD_PACKGENUM_PER_WRITE)))
+      |                                      ^~~~~~~~~~~~~~~~~~~~
+../src/app/task_sdcard.c:139:10: warning: unused variable 'cnt' [-Wunused-variable]
+  139 |  int32_t cnt =0;
+      |          ^~~
+../src/app/task_sdcard.c: At top level:
+../src/app/task_sdcard.c:231:1: warning: data definition has no type or storage class
+  231 | BDEV_MODULE_INIT_DECLARE(task_sdcard_init);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/task_sdcard.c:231:1: warning: type defaults to 'int' in declaration of 'BDEV_MODULE_INIT_DECLARE' [-Wimplicit-int]
+../src/app/task_sdcard.c:231:1: warning: parameter names (without types) in function declaration
+../src/app/task_sdcard.c: In function 'init_file_names':
+../src/app/task_sdcard.c:92:1: warning: control reaches end of non-void function [-Wreturn-type]
+   92 | }
+      | ^
+At top level:
+../src/app/task_sdcard.c:63:13: warning: 'testbuf' defined but not used [-Wunused-variable]
+   63 | static char testbuf[200] = {0x55,0xAA,0x55,0xAA};
+      |             ^~~~~~~
+../src/app/task_sdcard.c:60:27: warning: 'pSDcardHandlerTaskHandle' defined but not used [-Wunused-variable]
+   60 | static TaskHandle_t       pSDcardHandlerTaskHandle = NULL;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/app/task_sdcard.c'
+' '
+'Building file: ../src/app/task_test.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/app/task_test.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/app/task_test.d" -MT"src/app/task_test.o" -o "src/app/task_test.o" "../src/app/task_test.c"
+../src/app/task_test.c: In function 'AppTestHandlerThread':
+../src/app/task_test.c:44:9: warning: implicit declaration of function 'xil_printf' [-Wimplicit-function-declaration]
+   44 |         xil_printf("in test task \n\r");
+      |         ^~~~~~~~~~
+../src/app/task_test.c: At top level:
+../src/app/task_test.c:68:1: warning: data definition has no type or storage class
+   68 | BDEV_MODULE_INIT_DECLARE(task_test_init);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/app/task_test.c:68:1: warning: type defaults to 'int' in declaration of 'BDEV_MODULE_INIT_DECLARE' [-Wimplicit-int]
+../src/app/task_test.c:68:1: warning: parameter names (without types) in function declaration
+../src/app/task_test.c:34:27: warning: 'pTestHandlerTaskHandle' defined but not used [-Wunused-variable]
+   34 | static TaskHandle_t       pTestHandlerTaskHandle = NULL;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/app/task_test.c'
+' '
+'Building file: ../src/app.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/app.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/app.d" -MT"src/app.o" -o "src/app.o" "../src/app.c"
+In file included from D:\code\2Wproject\D3project\D3_zu\src\app/task_adcps_send.h:18,
+                 from ../src/app.c:16:
+D:\code\2Wproject\D3project\D3_zu\src\driver/dma_intr.h:25:1: warning: "/*" within comment [-Wcomment]
+   25 | /****************************************************/
+      |  
+In file included from ../src/app.c:19:
+D:\code\2Wproject\D3project\D3_zu\src\app/task_sdcard.h:20:8: warning: type defaults to 'int' in declaration of 'task_sdcard_send_give_rx_buffer_info' [-Wimplicit-int]
+   20 | extern task_sdcard_send_give_rx_buffer_info(dma_rx_buffer_info_t **rx_buffer);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/app.c:22:
+D:\code\2Wproject\D3project\D3_zu\src\utilities/utilities_plat_common.h:44:20: warning: inline function 'ModuleInitcall' declared but never defined
+   44 | extern inline void ModuleInitcall(enum module_init_type mod);
+      |                    ^~~~~~~~~~~~~~
+'Finished building: ../src/app.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\sys_manager" -I"D:\code\2Wproject\D3project\D3_zu\src\middleware\osif" -I"D:\code\2Wproject\D3project\D3_zu\src\app" -I"D:\code\2Wproject\D3project\D3_zu\src\utilities" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol" -I"D:\code\2Wproject\D3project\D3_zu\src\service\ethernet" -I"D:\code\2Wproject\D3project\D3_zu\src\driver" -I"D:\code\2Wproject\D3project\D3_zu\src\protocol\protocol_plcp" -c -fmessage-length=0 -MT"src/main.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from D:\code\2Wproject\D3project\D3_zu\src\driver/drivers_common.h:17,
+                 from ../src/main.c:17:
+D:\code\2Wproject\D3project\D3_zu\src\driver/dma_intr.h:25:1: warning: "/*" within comment [-Wcomment]
+   25 | /****************************************************/
+      |  
+In file included from ../src/main.c:16:
+D:\code\2Wproject\D3project\D3_zu\src\utilities/utilities_plat_common.h:44:20: warning: inline function 'ModuleInitcall' declared but never defined
+   44 | extern inline void ModuleInitcall(enum module_init_type mod);
+      |                    ^~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: D3_zu.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bsplib/lib -o "D3_zu.elf"  ./src/utilities/fifo.o ./src/utilities/frame.o ./src/utilities/utilities_data_coversion.o ./src/utilities/utilities_plat_common.o ./src/utilities/utilities_ringbuffer.o ./src/utilities/utility.o  ./src/service/ethernet/if_protocol.o ./src/service/ethernet/service_ethernet.o  ./src/protocol/protocol_plcp/protocol_plcp.o ./src/protocol/protocol_plcp/protocol_plcp_cmd_handle.o ./src/protocol/protocol_plcp/protocol_plcp_cmd_map.o ./src/protocol/protocol_plcp/protocol_plcp_common.o  ./src/protocol/protocol_adcompass.o  ./src/middleware/sys_manager/sys_manager.o  ./src/middleware/osif/osif_common.o ./src/middleware/osif/osif_ext.o ./src/middleware/osif/osif_freertos.o  ./src/freertos/port_freertos_hook.o  ./src/driver/dma_intr.o ./src/driver/gpiopl_intr.o ./src/driver/sdcard.o ./src/driver/sys_intr.o  ./src/app/task_DMAtrans.o ./src/app/task_adcps_send.o ./src/app/task_init.o ./src/app/task_sdcard.o ./src/app/task_test.o  ./src/app.o ./src/main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: D3_zu.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size D3_zu.elf  |tee "D3_zu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 402431	  12776	8540437	8955644	 88a6fc	D3_zu.elf
+'Finished building: D3_zu.elf.size'
+' '
+
+19:22:37 Build Finished (took 5s.352ms)
+

@@ -1,0 +1,14 @@
+TRACE::2023-02-17.18:16:53::SCWBifWriter::Found the complete platform D:/code/2Wproject/D3project/top/export/top/top.xpfm
+TRACE::2023-02-17.18:16:53::SCWBifWriter::hardware databse : top_6
+TRACE::2023-02-17.18:16:53::SCWBifWriter::bitstream found in the design
+TRACE::2023-02-17.18:16:53::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2023-02-17.18:16:53::SCWBifWriter::proc type : 
+TRACE::2023-02-17.18:16:53::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2023-02-17.18:16:53::SCWBifWriter::Device type is : zynqMP
+TRACE::2023-02-17.18:16:53::SCWBifWriter::Writing BIF to file : D:/code/2Wproject/D3project/D3_zu_system/_ide/bootimage/template_D3_zu_system.bif
+TRACE::2023-02-17.18:16:53::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2023-02-17.18:16:53::SCWBifWriter::System Command Ran  D:/Xilinx/Vitis/2021.2/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  D:/code/2Wproject/D3project/top/export/top/sw/top/boot/fsbl.elf
+TRACE::2023-02-17.18:16:53::SCWBifWriter:: Command Ran  D:/Xilinx/Vitis/2021.2/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  D:/code/2Wproject/D3project/top/export/top/sw/top/boot/fsbl.elf
+TRACE::2023-02-17.18:16:53::SCWBifWriter::FSBL processor, command ran D:/Xilinx/Vitis/2021.2/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  D:/code/2Wproject/D3project/top/export/top/sw/top/boot/fsbl.elf
+TRACE::2023-02-17.18:16:53::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2023-02-17.18:16:53::SCWBifWriter::Boot processor is :a53-0

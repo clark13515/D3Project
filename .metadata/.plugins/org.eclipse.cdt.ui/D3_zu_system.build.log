@@ -1,0 +1,8 @@
+16:33:11 **** Clean-only build of configuration Debug for project D3_zu_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+16:33:11 Build Finished (took 95ms)
+

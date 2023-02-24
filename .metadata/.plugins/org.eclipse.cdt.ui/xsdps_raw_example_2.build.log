@@ -1,0 +1,44 @@
+22:12:25 **** Build of configuration Debug for project xsdps_raw_example_2 ****
+make all 
+'Building file: ../src/sdcard.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sdcard.o" -ID:/code/2Wproject/D3project/top/export/top/sw/top/test/bspinclude/include -MMD -MP -MF"src/sdcard.d" -MT"src/sdcard.o" -o "src/sdcard.o" "../src/sdcard.c"
+../src/sdcard.c: In function 'sd_write_data':
+../src/sdcard.c:80:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   80 |  f_write (&fil, (void*)src_addr,byte_len,&bw);
+      |                 ^
+../src/sdcard.c: In function 'sd_read_data':
+../src/sdcard.c:96:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   96 |  f_read(&fil,(void*)src_addr,byte_len,&br);
+      |              ^
+../src/sdcard.c: In function 'sdcard_demo':
+../src/sdcard.c:108:26: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  108 |  sd_write_data(FILE_NAME,(u32)src_str,len); //写入数据
+      |                          ^
+../src/sdcard.c:109:25: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  109 |  sd_read_data(FILE_NAME,(u32)dest_str,len); //读取数据
+      |                         ^
+../src/sdcard.c:104:6: warning: unused variable 'status' [-Wunused-variable]
+  104 |  int status,len;
+      |      ^~~~~~
+'Finished building: ../src/sdcard.c'
+' '
+'Building file: ../src/xsdps_raw_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xsdps_raw_example.o" -ID:/code/2Wproject/D3project/top/export/top/sw/top/test/bspinclude/include -MMD -MP -MF"src/xsdps_raw_example.d" -MT"src/xsdps_raw_example.o" -o "src/xsdps_raw_example.o" "../src/xsdps_raw_example.c"
+'Finished building: ../src/xsdps_raw_example.c'
+' '
+'Building target: xsdps_raw_example_2.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/code/2Wproject/D3project/top/export/top/sw/top/test/bsplib/lib -o "xsdps_raw_example_2.elf"  ./src/sdcard.o ./src/xsdps_raw_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: xsdps_raw_example_2.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size xsdps_raw_example_2.elf  |tee "xsdps_raw_example_2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 133659	   2154	  44915	 180728	  2c1f8	xsdps_raw_example_2.elf
+'Finished building: xsdps_raw_example_2.elf.size'
+' '
+
+22:12:25 Build Finished (took 881ms)
+

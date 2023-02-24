@@ -1,0 +1,356 @@
+/*
+ * @Copyright: Copyright (C) by xxx Ltd
+ * @file: 
+ * @Brief: 
+ * @FilePath: \D3project\D3_zu\src\protocol\protocol_plcp\protocol_plcp.c
+ * @PROJECT: D3
+ * @COMPILER: GCC
+ * @HW PLATFORM: ARM
+ * @Author: Wang ShiLong
+ * @LastEditors: Wang ShiLong
+ * @Date: 2023-02-17 14:25:46
+ * @LastEditTime: 2023-02-17 16:02:32
+ */
+
+
+#include "protocol_plcp.h"
+#include "protocol_plcp_cmd_map.h"
+
+
+#define PROTOCOL_PLCP_RECV_BUF_SIZE          (1467)
+#define PROTOCOL_PLCP_PAYLOAD_DATA_SIZE      (1000)
+
+static protocol_plcp_handle_cb_t         g_protocol_plcp_handle_cb = NULL;
+
+static protocol_plcp_t                   g_protocol_plcp_request;
+static uint8_t                           g_protocol_plcp_request_data[PROTOCOL_PLCP_RECV_BUF_SIZE];
+static uint16_t                          g_protocol_plcp_request_data_length = 0;
+
+static protocol_plcp_t                   g_protocol_plcp_response;
+static uint8_t                           g_protocol_plcp_response_payload_data[PROTOCOL_PLCP_PAYLOAD_DATA_SIZE];
+static uint8_t                           g_protocol_plcp_response_data[PROTOCOL_PLCP_RECV_BUF_SIZE];
+static uint16_t                          g_protocol_plcp_response_data_length = 0;
+
+static protocol_plcp_handle_info_t       g_protocol_plcp_handle_info;
+
+static protocol_plcp_process_send_func_t g_protocol_plcp_handle_send = NULL;
+
+
+static protocol_plcp_err_t protocol_plcp_parse(protocol_plcp_t *plcp, uint8_t *packets, uint32_t length)
+{
+    if(length < PROTOCOL_PLCP_LENGTH_MIN)
+    {
+        //DEBUG(MSG_ERR, "[PLCP] length too short, recv=%d, min=%d", length, PROTOCOL_PLCP_LENGTH_MIN);
+        return PROTOCOL_PLCP_ERR_CODE_COMMON_PKG_LEN_SHORT;
+    }
+
+    if(length > PROTOCOL_PLCP_RECV_BUF_SIZE)
+    {
+        //DEBUG(MSG_ERR, "[PLCP] length too long, recv=%d, max=%d", length, PROTOCOL_PLCP_RECV_BUF_SIZE);
+        return PROTOCOL_PLCP_ERR_CODE_COMMON_PKG_LEN_LONG;
+    }
+
+    plcp->header.start_flag[0] = packets[0];
+    plcp->header.start_flag[1] = packets[1];
+    plcp->header.product_id    = packets[2];
+    plcp->header.protocol_id   = packets[3];
+    UTILITY_FILL_DATA_FROM_ARRAY(&(plcp->header.protocol_version), sizeof(uint16_t), &(packets[4]), PROTOCOL_PLCP_DATA_ENDIAN);
+
+    if(plcp->header.protocol_version < 2)
+    {
+        /* version befor 2 */
+        plcp->payload.cmd_id = packets[6];
+        UTILITY_FILL_DATA_FROM_ARRAY(&(plcp->payload.data_length), sizeof(uint16_t), &(packets[7]), PROTOCOL_PLCP_DATA_ENDIAN);
+        plcp->payload.data = &packets[9];
+
+        UTILITY_FILL_DATA_FROM_ARRAY(&(plcp->tail.sum_check), sizeof(uint32_t), &(packets[length-6]), PROTOCOL_PLCP_DATA_ENDIAN);
+        UTILITY_FILL_DATA_FROM_ARRAY(&(plcp->tail.end_flag),  sizeof(uint16_t), &(packets[length-2]), PROTOCOL_PLCP_DATA_ENDIAN);
+    }
+    else
+    {
+        /* 4 is counter size in header*/
+        if(length < (PROTOCOL_PLCP_LENGTH_MIN + 4))
+        {
+            //DEBUG(MSG_ERR, "[PLCP] length too short, protocol_version=%d, recv=%d, min=%d", plcp->header.protocol_version, length, PROTOCOL_PLCP_LENGTH_MIN + 4);
+            return PROTOCOL_PLCP_ERR_CODE_COMMON_PKG_LEN_SHORT;
+        }
+        UTILITY_FILL_DATA_FROM_ARRAY(&(plcp->header.counter), sizeof(uint32_t), &(packets[6]), PROTOCOL_PLCP_DATA_ENDIAN);
+
+        plcp->payload.cmd_id = packets[10];
+        UTILITY_FILL_DATA_FROM_ARRAY(&(plcp->payload.data_length), sizeof(uint16_t), &(packets[11]), PROTOCOL_PLCP_DATA_ENDIAN);
+        plcp->payload.data = &packets[13];
+
+        UTILITY_FILL_DATA_FROM_ARRAY(&(plcp->tail.sum_check), sizeof(uint32_t), &(packets[length-6]), PROTOCOL_PLCP_DATA_ENDIAN);
+        UTILITY_FILL_DATA_FROM_ARRAY(&(plcp->tail.end_flag),  sizeof(uint16_t), &(packets[length-2]), PROTOCOL_PLCP_DATA_ENDIAN);
+    }
+
+
+    plcp->raw_data = packets;
+    plcp->raw_data_length = length;
+
+    return PROTOCOL_PLCP_ERR_CODE_COMMON_SUCCESS;
+}
+
+static protocol_plcp_err_t protocol_plcp_check(protocol_plcp_t *plcp)
+{
+    uint16_t length_except_data;
+    if(plcp->header.start_flag[0] != 'C')
+    {
+        return PROTOCOL_PLCP_ERR_CODE_COMMON_START_FLAG_ERROR;
+    }
+
+    if(plcp->header.start_flag[1] != 'P')
+    {
+        return PROTOCOL_PLCP_ERR_CODE_COMMON_START_FLAG_ERROR;
+    }
+
+    if(plcp->tail.end_flag != 0xff00)
+    {
+        return PROTOCOL_PLCP_ERR_CODE_COMMON_END_FLAG_ERROR;
+    }
+
+
+    if(plcp->header.product_id != 0x01)
+    {
+        return PROTOCOL_PLCP_ERR_CODE_COMMON_PRODUCT_VERSION_ERROR;
+    }
+
+    if(plcp->header.protocol_id != 0x02)
+    {
+        return PROTOCOL_PLCP_ERR_CODE_COMMON_PROTOCOL_TYPE_ERROR;
+    }
+
+    if(plcp->header.protocol_version > 0x02)
+    {
+        return PROTOCOL_PLCP_ERR_CODE_COMMON_PROTOCOL_VERSION_ERROR;
+    }
+
+    /* check protocol version */
+    if(plcp->header.protocol_version < 2)
+    {
+        length_except_data = 15;
+    }
+    else
+    {
+        length_except_data = 19;
+    }
+
+    if((plcp->raw_data_length - length_except_data) != (plcp->payload.data_length))
+    {
+        return PROTOCOL_PLCP_ERR_CODE_COMMON_PKG_LEN_MISMATCH;
+    }
+
+    u32 sum = 0;
+    sum = protocol_common_calculation_check_with_protocol_version(plcp->header.protocol_version, plcp->raw_data, plcp->raw_data_length - PROTOCOL_PLCP_TAIL_LENGTH);
+    if(sum != plcp->tail.sum_check)
+    {
+        return PROTOCOL_PLCP_ERR_CODE_COMMON_CHECK_ERROR;
+    }
+
+
+
+    return PROTOCOL_PLCP_ERR_CODE_COMMON_SUCCESS;
+}
+
+
+static protocol_plcp_err_t protocol_plcp_package(protocol_plcp_t *plcp, uint8_t *data, uint16_t *data_length)
+{
+    uint16_t length = 0;
+    /**
+     * header
+     * 
+     */
+    /* header start flag */
+    data[0] = 'C';
+    data[1] = 'P';
+
+    /* header product identifier */
+    data[2] = 0x01;
+
+    /* header protocol identifier */
+    data[3] = 0x03;
+
+    /* header protocol version */
+    UTILITY_FILL_ARRAY_FROM_DATA(&data[4], sizeof(uint16_t), plcp->header.protocol_version, PROTOCOL_PLCP_DATA_ENDIAN);
+    length += 6;
+    if(plcp->header.protocol_version < 2)
+    {
+        length += 0;
+    }
+    else
+    {
+        /* header counter */
+        UTILITY_FILL_ARRAY_FROM_DATA(&data[6], sizeof(uint32_t), plcp->header.counter, PROTOCOL_PLCP_DATA_ENDIAN);
+        length += 4;
+    }
+
+    /* payload */
+    data[length] = plcp->payload.cmd_id;
+    length += 1;
+    UTILITY_FILL_ARRAY_FROM_DATA(&data[length], sizeof(uint16_t),  plcp->payload.data_length, PROTOCOL_PLCP_DATA_ENDIAN);
+    length += 2;
+    memcpy((void *)&data[length], (void *)plcp->payload.data, plcp->payload.data_length);
+    length += plcp->payload.data_length;
+
+    uint32_t check = 0;
+    check = protocol_common_calculation_check_with_protocol_version(plcp->header.protocol_version, data, length);
+
+    /* check */
+    UTILITY_FILL_ARRAY_FROM_DATA(&data[length], sizeof(uint32_t),  check, PROTOCOL_PLCP_DATA_ENDIAN);
+    length += 4;
+
+    /* tail */
+    data[length] = 0x00;
+    data[length+1] = 0xff;
+    length += 2;
+
+    *data_length = length;
+    return PROTOCOL_PLCP_ERR_CODE_COMMON_SUCCESS;
+}
+
+static void protocol_plcp_request_init(protocol_plcp_t *plcp_request)
+{
+    plcp_request->header.start_flag[0]      = 'C';
+    plcp_request->header.start_flag[1]      = 'P';
+    plcp_request->header.product_id         = 0x01;
+    plcp_request->header.protocol_id        = 0x02;
+    plcp_request->header.protocol_version   = 0x02;
+    plcp_request->header.counter            = 0x00;
+
+    plcp_request->payload.cmd_id = 0xFF;
+    plcp_request->payload.data_length = 0x01;
+    plcp_request->payload.data = NULL;
+}
+
+void protocol_plcp_handle_cb_register(protocol_plcp_handle_cb_t handle_cb)
+{
+    if(NULL != handle_cb)
+    {
+        g_protocol_plcp_handle_cb = handle_cb;
+    }
+}
+
+void protocol_plcp_handle_cb_unregister(void)
+{
+    g_protocol_plcp_handle_cb = NULL;
+}
+
+
+
+
+int protocol_plcp_msg_process(protocol_plcp_process_msg_t *msg)
+{
+    protocol_plcp_err_t err = PROTOCOL_PLCP_ERR_CODE_COMMON_SUCCESS;
+    g_protocol_plcp_handle_send         = msg->info->send;
+    g_protocol_plcp_request_data_length = msg->info->length;
+    memcpy(g_protocol_plcp_request_data, msg->info->data, msg->info->length);
+
+    msg->info->status = PLCP_BUFFER_EMPTY;
+
+    protocol_plcp_cmd_info_t *p_cmd_info = NULL;
+    do
+    {
+        /**
+         * The plcp request message is assigned an initial value 
+         * so that if the received data is not successfully parsed, 
+         * the response can use the initial value.
+         */
+        protocol_plcp_request_init(&g_protocol_plcp_request);
+        err = protocol_plcp_parse(&g_protocol_plcp_request, g_protocol_plcp_request_data, g_protocol_plcp_request_data_length);
+        if(PROTOCOL_PLCP_ERR_CODE_COMMON_SUCCESS != err)
+        {
+            break;
+        }
+
+        err = protocol_plcp_check(&g_protocol_plcp_request);
+        if(PROTOCOL_PLCP_ERR_CODE_COMMON_SUCCESS != err)
+        {
+            break;
+        }
+
+        // //DEBUG(MSG_NOTICE, "[PLCP] cmd    = 0x%02x", g_protocol_plcp_request.payload.cmd_id);
+        // //DEBUG(MSG_NOTICE, "[PLCP] length = 0x%04x", g_protocol_plcp_request.payload.data_length);
+
+        protocol_plcp_get_cmd_info_with_cmd_id(g_protocol_plcp_request.payload.cmd_id, &p_cmd_info);
+        if(NULL == p_cmd_info)
+        {
+            //DEBUG(MSG_ERR, "[PLCP] cmd not find = 0x%02x", g_protocol_plcp_request.payload.cmd_id);
+            err = PROTOCOL_PLCP_ERR_CODE_COMMON_CMD_UNKNOWN;
+            break;
+        }
+
+        /* attenation should First specify the storage address*/
+        g_protocol_plcp_response.payload.data = &g_protocol_plcp_response_payload_data[0];
+        protocol_plcp_handle_cb_unregister();
+
+        protocol_plcp_handle_t handle = p_cmd_info->handle;
+ 
+
+        if(NULL == handle)
+        {
+            //DEBUG(MSG_WARNING, "[PLCP] cmd handle is NULL, cmd_id=%d", g_protocol_plcp_request.payload.cmd_id);
+            err = PROTOCOL_PLCP_ERR_CODE_COMMON_CMD_NO_HANDLE;
+            break;
+        }
+
+        if((0 == p_cmd_info->runtime))
+        {
+            //DEBUG(MSG_WARNING, "[PLCP] cmd not supported to be executed during lidar operation, cmd_id=%d", p_cmd_info->cmd_id);
+            err = PROTOCOL_PLCP_ERR_CODE_COMMON_CMD_STATUS_ERR;
+            break;
+        }
+
+        int request_length = p_cmd_info->request_length;
+        if(g_protocol_plcp_request.payload.data_length < (p_cmd_info->request_data_length_min))
+        {
+            err = PROTOCOL_PLCP_ERR_CODE_COMMON_CMD_LEN_ERROR;
+            break;
+        }
+        if((request_length != -1) && (request_length != g_protocol_plcp_request.payload.data_length))
+        {
+            err = PROTOCOL_PLCP_ERR_CODE_COMMON_CMD_LEN_ERROR;
+            break;
+        }
+
+        g_protocol_plcp_handle_info.cmd_info = p_cmd_info;
+        g_protocol_plcp_handle_info.request  = &g_protocol_plcp_request;
+        g_protocol_plcp_handle_info.response = &g_protocol_plcp_response;
+        err = handle((void *)&g_protocol_plcp_handle_info);
+        if(PROTOCOL_PLCP_ERR_CODE_COMMON_SUCCESS != err)
+        {
+            //DEBUG(MSG_WARNING, "[PLCP] cmd execution error, cmd_id=0x%02x", p_cmd_info->cmd_id);
+            break;
+        }
+
+    } while (0);
+
+    if(PROTOCOL_PLCP_ERR_CODE_COMMON_SUCCESS != err)
+    {
+        if(g_protocol_plcp_request.header.protocol_version < 2)
+        {
+            /* always return 0xFF */
+            g_protocol_plcp_response.payload.data[0] = 0xFF;
+            g_protocol_plcp_response.payload.data_length = 1;
+        }
+        else
+        {
+            UTILITY_FILL_ARRAY_FROM_DATA(&g_protocol_plcp_response.payload.data[0], sizeof(uint16_t), (uint16_t)err, PROTOCOL_PLCP_DATA_ENDIAN);
+            g_protocol_plcp_response.payload.data_length = 2;
+        }
+    }
+
+    g_protocol_plcp_response.payload.cmd_id = g_protocol_plcp_request.payload.cmd_id;
+    g_protocol_plcp_response.header.protocol_version = g_protocol_plcp_request.header.protocol_version;
+    g_protocol_plcp_response.header.counter = g_protocol_plcp_request.header.counter;
+    protocol_plcp_package(&g_protocol_plcp_response, g_protocol_plcp_response_data, &g_protocol_plcp_response_data_length);
+
+    g_protocol_plcp_handle_send(g_protocol_plcp_response_data, g_protocol_plcp_response_data_length);
+    
+    if(NULL != g_protocol_plcp_handle_cb)
+    {
+        g_protocol_plcp_handle_cb();
+    }
+    //DEBUG(MSG_INFO, "[PLCP] response success, cmd_id=%d\r\n", p_cmd_info->cmd_id);
+
+    return 0;
+}

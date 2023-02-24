@@ -1,0 +1,36 @@
+20:21:55 **** Incremental Build of configuration Debug for project NetTest ****
+make all 
+'Building file: ../src/freertos/port_freertos_hook.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos/port_freertos_hook.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/freertos/port_freertos_hook.d" -MT"src/freertos/port_freertos_hook.o" -o "src/freertos/port_freertos_hook.o" "../src/freertos/port_freertos_hook.c"
+'Finished building: ../src/freertos/port_freertos_hook.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/udp_perf_server.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/udp_perf_server.o" -ID:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bspinclude/include -MMD -MP -MF"src/udp_perf_server.d" -MT"src/udp_perf_server.o" -o "src/udp_perf_server.o" "../src/udp_perf_server.c"
+'Finished building: ../src/udp_perf_server.c'
+' '
+'Building target: NetTest.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/code/2Wproject/D3project/D3_zu3_hw/export/D3_zu3_hw/sw/D3_zu3_hw/freertos10_xilinx_domain/bsplib/lib -o "NetTest.elf"  ./src/freertos/port_freertos_hook.o  ./src/iic_phyreset.o ./src/main.o ./src/udp_perf_server.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: NetTest.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size NetTest.elf  |tee "NetTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 250311	   7944	8540373	8798628	 8641a4	NetTest.elf
+'Finished building: NetTest.elf.size'
+' '
+
+20:21:56 Build Finished (took 1s.92ms)
+
